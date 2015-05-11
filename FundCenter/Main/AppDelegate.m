@@ -7,8 +7,22 @@
 //
 
 #import "AppDelegate.h"
+#import "FCAccountTool.h"
+
+#import "FCLoginViewController.h"
+#import "FCNewGuideViewController.h"
+
+#import "RDVTabBarController.h"
+#import "RDVTabBarItem.h"
+#import "FCHomeViewController.h"
+#import "FCMessageViewController.h"
+#import "FCCollectionViewController.h"
+#import "FCProfileViewController.h"
+
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) RDVTabBarController *tabBarVC;
 
 @end
 
@@ -17,8 +31,80 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    NSString *key = @"CFBundleVersion";
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *lastVersion = [defaults stringForKey:key];
+    
+    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
+    
+    if ([currentVersion isEqualToString:lastVersion]) {
+        
+        application.statusBarHidden = NO;
+        if ([FCAccountTool sharedFCAccountTool].currentAccount) {
+            
+            [self setupViewControllers];
+            
+        } else {
+            
+            self.window.rootViewController = [[FCLoginViewController alloc] init];
+        }
+        
+        
+    } else {
+        //TODO: NewFeatureViewController
+        self.window.rootViewController =  [[FCNewGuideViewController alloc] init];
+        [defaults setObject:currentVersion forKey:key];
+        [defaults synchronize];
+    }
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
+
+- (void)setupViewControllers
+{
+    UINavigationController *firstNav = [[UINavigationController alloc] initWithRootViewController:[FCHomeViewController new]];
+    
+    UINavigationController *secondNav = [[UINavigationController alloc] initWithRootViewController:[FCMessageViewController new]];
+    
+    UINavigationController *thirdNav = [[UINavigationController alloc] initWithRootViewController:[FCCollectionViewController new]];
+    
+    UINavigationController *fourthNav = [[UINavigationController alloc] initWithRootViewController:[FCProfileViewController new]];
+    
+    self.tabBarVC = [[RDVTabBarController alloc] init];
+    [self.tabBarVC setViewControllers:@[firstNav, secondNav, thirdNav, fourthNav]];
+    
+    [self customizeTabBarForController:self.tabBarVC];
+                                     
+}
+
+- (void)customizeTabBarForController:(RDVTabBarController *)tabBarController
+{
+    
+    //TODO:图标要替换掉
+    UIImage *finishedImage = [UIImage imageNamed:@"tabbar_selected_background"];
+    UIImage *unfinishedImage = [UIImage imageNamed:@"tabbar_normal_background"];
+    NSArray *tabBarItemImages = @[@"first", @"second", @"third", @"second"];
+    
+    NSInteger index = 0;
+    
+    for (RDVTabBarItem *item in [[tabBarController tabBar] items]) {
+        [item setBackgroundSelectedImage:finishedImage withUnselectedImage:unfinishedImage];
+        UIImage *selectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_selected",
+                                                      [tabBarItemImages objectAtIndex:index]]];
+        UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_normal",
+                                                        [tabBarItemImages objectAtIndex:index]]];
+        [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
+        
+        index++;
+    }
+    self.window.rootViewController = self.tabBarVC;
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

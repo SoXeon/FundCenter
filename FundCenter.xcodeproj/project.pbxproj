@@ -52,6 +52,14 @@
 		E22FAE2B1B00612200651413 /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAE281B00612200651413 /* RDVTabBarItem.m */; };
 		E22FAE2F1B00627C00651413 /* RKNotificationHub.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAE2E1B00627C00651413 /* RKNotificationHub.m */; };
 		E22FAE311B00629C00651413 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22FAE301B00629C00651413 /* QuartzCore.framework */; };
+		E22FAE811B00760000651413 /* FCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAE801B00760000651413 /* FCLoginViewController.m */; };
+		E22FAE841B00761900651413 /* FCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAE831B00761900651413 /* FCHomeViewController.m */; };
+		E22FAE871B00762D00651413 /* FCMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAE861B00762D00651413 /* FCMessageViewController.m */; };
+		E22FAE8A1B00764100651413 /* FCCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAE891B00764100651413 /* FCCollectionViewController.m */; };
+		E22FAE8D1B00765B00651413 /* FCProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAE8C1B00765B00651413 /* FCProfileViewController.m */; };
+		E22FAE911B00786D00651413 /* FCAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAE901B00786D00651413 /* FCAccountTool.m */; };
+		E22FAE951B00792800651413 /* FCAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAE941B00792800651413 /* FCAccount.m */; };
+		E22FAE991B007BC800651413 /* FCNewGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAE981B007BC800651413 /* FCNewGuideViewController.m */; };
 		E2EFB3021AFFA43B00F81575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3001AFFA43B00F81575 /* Main.storyboard */; };
 		E2EFB3041AFFA43B00F81575 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3031AFFA43B00F81575 /* Images.xcassets */; };
 		E2EFB3071AFFA43B00F81575 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3051AFFA43B00F81575 /* LaunchScreen.xib */; };
@@ -169,6 +177,23 @@
 		E22FAE2D1B00627C00651413 /* RKNotificationHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKNotificationHub.h; sourceTree = "<group>"; };
 		E22FAE2E1B00627C00651413 /* RKNotificationHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKNotificationHub.m; sourceTree = "<group>"; };
 		E22FAE301B00629C00651413 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E22FAE7F1B00760000651413 /* FCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCLoginViewController.h; sourceTree = "<group>"; };
+		E22FAE801B00760000651413 /* FCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCLoginViewController.m; sourceTree = "<group>"; };
+		E22FAE821B00761900651413 /* FCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCHomeViewController.h; sourceTree = "<group>"; };
+		E22FAE831B00761900651413 /* FCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCHomeViewController.m; sourceTree = "<group>"; };
+		E22FAE851B00762D00651413 /* FCMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMessageViewController.h; sourceTree = "<group>"; };
+		E22FAE861B00762D00651413 /* FCMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCMessageViewController.m; sourceTree = "<group>"; };
+		E22FAE881B00764100651413 /* FCCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCCollectionViewController.h; sourceTree = "<group>"; };
+		E22FAE891B00764100651413 /* FCCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCollectionViewController.m; sourceTree = "<group>"; };
+		E22FAE8B1B00765B00651413 /* FCProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCProfileViewController.h; sourceTree = "<group>"; };
+		E22FAE8C1B00765B00651413 /* FCProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCProfileViewController.m; sourceTree = "<group>"; };
+		E22FAE8F1B00786D00651413 /* FCAccountTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCAccountTool.h; sourceTree = "<group>"; };
+		E22FAE901B00786D00651413 /* FCAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCAccountTool.m; sourceTree = "<group>"; };
+		E22FAE921B0078AC00651413 /* Single.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Single.h; sourceTree = "<group>"; };
+		E22FAE931B00792800651413 /* FCAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCAccount.h; sourceTree = "<group>"; };
+		E22FAE941B00792800651413 /* FCAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCAccount.m; sourceTree = "<group>"; };
+		E22FAE971B007BC800651413 /* FCNewGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCNewGuideViewController.h; sourceTree = "<group>"; };
+		E22FAE981B007BC800651413 /* FCNewGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCNewGuideViewController.m; sourceTree = "<group>"; };
 		E2EFB2F01AFFA43A00F81575 /* FundCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FundCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EFB3011AFFA43B00F81575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2EFB3031AFFA43B00F81575 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
@@ -340,6 +365,27 @@
 			path = RKNotificationHub;
 			sourceTree = "<group>";
 		};
+		E22FAE8E1B00784D00651413 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E22FAE921B0078AC00651413 /* Single.h */,
+				E22FAE8F1B00786D00651413 /* FCAccountTool.h */,
+				E22FAE901B00786D00651413 /* FCAccountTool.m */,
+				E22FAE931B00792800651413 /* FCAccount.h */,
+				E22FAE941B00792800651413 /* FCAccount.m */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
+		E22FAE961B007BAE00651413 /* NewGuide */ = {
+			isa = PBXGroup;
+			children = (
+				E22FAE971B007BC800651413 /* FCNewGuideViewController.h */,
+				E22FAE981B007BC800651413 /* FCNewGuideViewController.m */,
+			);
+			name = NewGuide;
+			sourceTree = "<group>";
+		};
 		E2EFB2E71AFFA43A00F81575 = {
 			isa = PBXGroup;
 			children = (
@@ -430,6 +476,8 @@
 		E2EFB32A1B0055C700F81575 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E22FAE821B00761900651413 /* FCHomeViewController.h */,
+				E22FAE831B00761900651413 /* FCHomeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -461,6 +509,8 @@
 		E2EFB32E1B0055D000F81575 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E22FAE851B00762D00651413 /* FCMessageViewController.h */,
+				E22FAE861B00762D00651413 /* FCMessageViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -492,6 +542,8 @@
 		E2EFB3321B0055D600F81575 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E22FAE8B1B00765B00651413 /* FCProfileViewController.h */,
+				E22FAE8C1B00765B00651413 /* FCProfileViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -523,6 +575,8 @@
 		E2EFB3361B0055DC00F81575 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E22FAE881B00764100651413 /* FCCollectionViewController.h */,
+				E22FAE891B00764100651413 /* FCCollectionViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -665,6 +719,8 @@
 		E2EFB3491B00564900F81575 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				E22FAE7F1B00760000651413 /* FCLoginViewController.h */,
+				E22FAE801B00760000651413 /* FCLoginViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -685,6 +741,8 @@
 		E2EFB34B1B0056D800F81575 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				E22FAE961B007BAE00651413 /* NewGuide */,
+				E22FAE8E1B00784D00651413 /* Tool */,
 				E2EFB34D1B00587C00F81575 /* FundCenterCommon.pch */,
 				E2EFB3271B00539900F81575 /* Info.plist */,
 				E2EFB3031AFFA43B00F81575 /* Images.xcassets */,
@@ -798,10 +856,13 @@
 			files = (
 				E22FAE051B005DA300651413 /* SDWebImageDecoder.m in Sources */,
 				E22FAE1E1B005E5E00651413 /* CRToastManager.m in Sources */,
+				E22FAE841B00761900651413 /* FCHomeViewController.m in Sources */,
+				E22FAE8D1B00765B00651413 /* FCProfileViewController.m in Sources */,
 				E22FAD661B005A4200651413 /* AFHTTPRequestOperation.m in Sources */,
 				E22FAE011B005DA300651413 /* MKAnnotationView+WebCache.m in Sources */,
 				E22FAD8F1B005A8300651413 /* NSArray+MASAdditions.m in Sources */,
 				E22FAE201B005E5E00651413 /* CRToastViewController.m in Sources */,
+				E22FAE951B00792800651413 /* FCAccount.m in Sources */,
 				E2EFB3231B0052B100F81575 /* FundCenter.xcdatamodeld in Sources */,
 				E22FAD901B005A8300651413 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				E22FAD671B005A4200651413 /* AFHTTPRequestOperationManager.m in Sources */,
@@ -816,9 +877,12 @@
 				E22FAE0A1B005DA300651413 /* UIButton+WebCache.m in Sources */,
 				E22FAE1D1B005E5E00651413 /* CRToast.m in Sources */,
 				E22FAE291B00612200651413 /* RDVTabBar.m in Sources */,
+				E22FAE811B00760000651413 /* FCLoginViewController.m in Sources */,
 				E22FAE2B1B00612200651413 /* RDVTabBarItem.m in Sources */,
+				E22FAE991B007BC800651413 /* FCNewGuideViewController.m in Sources */,
 				E22FAD8C1B005A8300651413 /* MASLayoutConstraint.m in Sources */,
 				E22FAD891B005A8300651413 /* MASCompositeConstraint.m in Sources */,
+				E22FAE871B00762D00651413 /* FCMessageViewController.m in Sources */,
 				E22FAD6D1B005A4200651413 /* AFURLResponseSerialization.m in Sources */,
 				E22FAD6B1B005A4200651413 /* AFURLConnectionOperation.m in Sources */,
 				E22FAD8E1B005A8300651413 /* MASViewConstraint.m in Sources */,
@@ -828,6 +892,7 @@
 				E22FAE2A1B00612200651413 /* RDVTabBarController.m in Sources */,
 				E22FAD6C1B005A4200651413 /* AFURLRequestSerialization.m in Sources */,
 				E22FAE091B005DA300651413 /* SDWebImagePrefetcher.m in Sources */,
+				E22FAE8A1B00764100651413 /* FCCollectionViewController.m in Sources */,
 				E22FAE0D1B005DA300651413 /* UIImage+WebP.m in Sources */,
 				E22FAE081B005DA300651413 /* SDWebImageManager.m in Sources */,
 				E22FAE021B005DA300651413 /* NSData+ImageContentType.m in Sources */,
@@ -837,6 +902,7 @@
 				E2EFB3221B0052B100F81575 /* AppDelegate.m in Sources */,
 				E22FAD8A1B005A8300651413 /* MASConstraint.m in Sources */,
 				E22FAE1F1B005E5E00651413 /* CRToastView.m in Sources */,
+				E22FAE911B00786D00651413 /* FCAccountTool.m in Sources */,
 				E2EFB3241B0052B100F81575 /* main.m in Sources */,
 				E22FAE101B005DA300651413 /* UIView+WebCacheOperation.m in Sources */,
 				E22FAE2F1B00627C00651413 /* RKNotificationHub.m in Sources */,
