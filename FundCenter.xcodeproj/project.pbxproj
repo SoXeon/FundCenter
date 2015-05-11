@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E2EFB2F61AFFA43A00F81575 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EFB2F51AFFA43A00F81575 /* main.m */; };
-		E2EFB2F91AFFA43A00F81575 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EFB2F81AFFA43A00F81575 /* AppDelegate.m */; };
-		E2EFB2FC1AFFA43B00F81575 /* FundCenter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2EFB2FA1AFFA43B00F81575 /* FundCenter.xcdatamodeld */; };
-		E2EFB2FF1AFFA43B00F81575 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EFB2FE1AFFA43B00F81575 /* ViewController.m */; };
 		E2EFB3021AFFA43B00F81575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3001AFFA43B00F81575 /* Main.storyboard */; };
 		E2EFB3041AFFA43B00F81575 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3031AFFA43B00F81575 /* Images.xcassets */; };
 		E2EFB3071AFFA43B00F81575 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3051AFFA43B00F81575 /* LaunchScreen.xib */; };
 		E2EFB3131AFFA43B00F81575 /* FundCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EFB3121AFFA43B00F81575 /* FundCenterTests.m */; };
+		E2EFB3221B0052B100F81575 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EFB31E1B0052B100F81575 /* AppDelegate.m */; };
+		E2EFB3231B0052B100F81575 /* FundCenter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2EFB31F1B0052B100F81575 /* FundCenter.xcdatamodeld */; };
+		E2EFB3241B0052B100F81575 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EFB3211B0052B100F81575 /* main.m */; };
+		E2EFB3281B00539900F81575 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3271B00539900F81575 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,19 +29,18 @@
 
 /* Begin PBXFileReference section */
 		E2EFB2F01AFFA43A00F81575 /* FundCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FundCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2EFB2F41AFFA43A00F81575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2EFB2F51AFFA43A00F81575 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E2EFB2F71AFFA43A00F81575 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E2EFB2F81AFFA43A00F81575 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E2EFB2FB1AFFA43B00F81575 /* FundCenter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FundCenter.xcdatamodel; sourceTree = "<group>"; };
-		E2EFB2FD1AFFA43B00F81575 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E2EFB2FE1AFFA43B00F81575 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E2EFB3011AFFA43B00F81575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E2EFB3031AFFA43B00F81575 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E2EFB3031AFFA43B00F81575 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		E2EFB3061AFFA43B00F81575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E2EFB30C1AFFA43B00F81575 /* FundCenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FundCenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EFB3111AFFA43B00F81575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2EFB3121AFFA43B00F81575 /* FundCenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FundCenterTests.m; sourceTree = "<group>"; };
+		E2EFB31D1B0052B100F81575 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E2EFB31E1B0052B100F81575 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E2EFB3201B0052B100F81575 /* FundCenter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FundCenter.xcdatamodel; sourceTree = "<group>"; };
+		E2EFB3211B0052B100F81575 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2EFB3271B00539900F81575 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		E2EFB34D1B00587C00F81575 /* FundCenterCommon.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FundCenterCommon.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,14 +82,21 @@
 		E2EFB2F21AFFA43A00F81575 /* FundCenter */ = {
 			isa = PBXGroup;
 			children = (
-				E2EFB2F71AFFA43A00F81575 /* AppDelegate.h */,
-				E2EFB2F81AFFA43A00F81575 /* AppDelegate.m */,
-				E2EFB2FD1AFFA43B00F81575 /* ViewController.h */,
-				E2EFB2FE1AFFA43B00F81575 /* ViewController.m */,
-				E2EFB3001AFFA43B00F81575 /* Main.storyboard */,
-				E2EFB3031AFFA43B00F81575 /* Images.xcassets */,
-				E2EFB3051AFFA43B00F81575 /* LaunchScreen.xib */,
-				E2EFB2FA1AFFA43B00F81575 /* FundCenter.xcdatamodeld */,
+				E2EFB3291B0055C700F81575 /* Home */,
+				E2EFB32D1B0055D000F81575 /* Message */,
+				E2EFB3351B0055DC00F81575 /* Collection */,
+				E2EFB3311B0055D600F81575 /* Profile */,
+				E2EFB34A1B00565100F81575 /* Vendors */,
+				E2EFB3491B00564900F81575 /* Login */,
+				E2EFB3481B00564200F81575 /* StockChooseEX */,
+				E2EFB3471B00563B00F81575 /* CurrentNews */,
+				E2EFB3461B00563500F81575 /* OtherMarket */,
+				E2EFB3451B0055F600F81575 /* TopStock */,
+				E2EFB3411B0055EF00F81575 /* StockTrend */,
+				E2EFB33D1B0055E900F81575 /* MyOwnStock */,
+				E2EFB3391B0055E300F81575 /* Focus */,
+				E2EFB31C1B0052B100F81575 /* Main */,
+				E2EFB34B1B0056D800F81575 /* Other */,
 				E2EFB2F31AFFA43A00F81575 /* Supporting Files */,
 			);
 			path = FundCenter;
@@ -99,8 +105,6 @@
 		E2EFB2F31AFFA43A00F81575 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E2EFB2F41AFFA43A00F81575 /* Info.plist */,
-				E2EFB2F51AFFA43A00F81575 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -120,6 +124,288 @@
 				E2EFB3111AFFA43B00F81575 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2EFB31C1B0052B100F81575 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFB31D1B0052B100F81575 /* AppDelegate.h */,
+				E2EFB31E1B0052B100F81575 /* AppDelegate.m */,
+				E2EFB31F1B0052B100F81575 /* FundCenter.xcdatamodeld */,
+				E2EFB3211B0052B100F81575 /* main.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E2EFB3291B0055C700F81575 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFB32A1B0055C700F81575 /* Controller */,
+				E2EFB32B1B0055C700F81575 /* Model */,
+				E2EFB32C1B0055C700F81575 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E2EFB32A1B0055C700F81575 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E2EFB32B1B0055C700F81575 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2EFB32C1B0055C700F81575 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2EFB32D1B0055D000F81575 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFB32E1B0055D000F81575 /* Controller */,
+				E2EFB32F1B0055D000F81575 /* Model */,
+				E2EFB3301B0055D000F81575 /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		E2EFB32E1B0055D000F81575 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E2EFB32F1B0055D000F81575 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2EFB3301B0055D000F81575 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2EFB3311B0055D600F81575 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFB3321B0055D600F81575 /* Controller */,
+				E2EFB3331B0055D600F81575 /* Model */,
+				E2EFB3341B0055D600F81575 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E2EFB3321B0055D600F81575 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E2EFB3331B0055D600F81575 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2EFB3341B0055D600F81575 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2EFB3351B0055DC00F81575 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFB3361B0055DC00F81575 /* Controller */,
+				E2EFB3371B0055DC00F81575 /* Model */,
+				E2EFB3381B0055DC00F81575 /* View */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		E2EFB3361B0055DC00F81575 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E2EFB3371B0055DC00F81575 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2EFB3381B0055DC00F81575 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2EFB3391B0055E300F81575 /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFB33A1B0055E300F81575 /* Controller */,
+				E2EFB33B1B0055E300F81575 /* Model */,
+				E2EFB33C1B0055E300F81575 /* View */,
+			);
+			path = Focus;
+			sourceTree = "<group>";
+		};
+		E2EFB33A1B0055E300F81575 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E2EFB33B1B0055E300F81575 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2EFB33C1B0055E300F81575 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2EFB33D1B0055E900F81575 /* MyOwnStock */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFB33E1B0055E900F81575 /* Controller */,
+				E2EFB33F1B0055E900F81575 /* Model */,
+				E2EFB3401B0055E900F81575 /* View */,
+			);
+			path = MyOwnStock;
+			sourceTree = "<group>";
+		};
+		E2EFB33E1B0055E900F81575 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E2EFB33F1B0055E900F81575 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2EFB3401B0055E900F81575 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2EFB3411B0055EF00F81575 /* StockTrend */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFB3421B0055EF00F81575 /* Controller */,
+				E2EFB3431B0055EF00F81575 /* Model */,
+				E2EFB3441B0055EF00F81575 /* View */,
+			);
+			path = StockTrend;
+			sourceTree = "<group>";
+		};
+		E2EFB3421B0055EF00F81575 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E2EFB3431B0055EF00F81575 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2EFB3441B0055EF00F81575 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2EFB3451B0055F600F81575 /* TopStock */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TopStock;
+			sourceTree = "<group>";
+		};
+		E2EFB3461B00563500F81575 /* OtherMarket */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OtherMarket;
+			sourceTree = "<group>";
+		};
+		E2EFB3471B00563B00F81575 /* CurrentNews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CurrentNews;
+			sourceTree = "<group>";
+		};
+		E2EFB3481B00564200F81575 /* StockChooseEX */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StockChooseEX;
+			sourceTree = "<group>";
+		};
+		E2EFB3491B00564900F81575 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E2EFB34A1B00565100F81575 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		E2EFB34B1B0056D800F81575 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFB34D1B00587C00F81575 /* FundCenterCommon.pch */,
+				E2EFB3271B00539900F81575 /* Info.plist */,
+				E2EFB3031AFFA43B00F81575 /* Images.xcassets */,
+				E2EFB3051AFFA43B00F81575 /* LaunchScreen.xib */,
+				E2EFB3001AFFA43B00F81575 /* Main.storyboard */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +488,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2EFB3281B00539900F81575 /* Info.plist in Resources */,
 				E2EFB3021AFFA43B00F81575 /* Main.storyboard in Resources */,
 				E2EFB3071AFFA43B00F81575 /* LaunchScreen.xib in Resources */,
 				E2EFB3041AFFA43B00F81575 /* Images.xcassets in Resources */,
@@ -222,10 +509,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2EFB2FC1AFFA43B00F81575 /* FundCenter.xcdatamodeld in Sources */,
-				E2EFB2F91AFFA43A00F81575 /* AppDelegate.m in Sources */,
-				E2EFB2FF1AFFA43B00F81575 /* ViewController.m in Sources */,
-				E2EFB2F61AFFA43A00F81575 /* main.m in Sources */,
+				E2EFB3231B0052B100F81575 /* FundCenter.xcdatamodeld in Sources */,
+				E2EFB3221B0052B100F81575 /* AppDelegate.m in Sources */,
+				E2EFB3241B0052B100F81575 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +540,7 @@
 				E2EFB3011AFFA43B00F81575 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		E2EFB3051AFFA43B00F81575 /* LaunchScreen.xib */ = {
@@ -262,6 +549,7 @@
 				E2EFB3061AFFA43B00F81575 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -353,6 +641,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FundCenter/Other/FundCenterCommon.pch";
 				INFOPLIST_FILE = FundCenter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -364,6 +653,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FundCenter/Other/FundCenterCommon.pch";
 				INFOPLIST_FILE = FundCenter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -424,6 +714,7 @@
 				E2EFB3181AFFA43B00F81575 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2EFB3191AFFA43B00F81575 /* Build configuration list for PBXNativeTarget "FundCenterTests" */ = {
 			isa = XCConfigurationList;
@@ -432,16 +723,17 @@
 				E2EFB31B1AFFA43B00F81575 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E2EFB2FA1AFFA43B00F81575 /* FundCenter.xcdatamodeld */ = {
+		E2EFB31F1B0052B100F81575 /* FundCenter.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				E2EFB2FB1AFFA43B00F81575 /* FundCenter.xcdatamodel */,
+				E2EFB3201B0052B100F81575 /* FundCenter.xcdatamodel */,
 			);
-			currentVersion = E2EFB2FB1AFFA43B00F81575 /* FundCenter.xcdatamodel */;
+			currentVersion = E2EFB3201B0052B100F81575 /* FundCenter.xcdatamodel */;
 			path = FundCenter.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

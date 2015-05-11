@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1C32906D-9F12-406B-8231-ED539298CEB1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FundCenter</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AA729C40414A05C22419EDEB94802EDB04926CD1</key>
+		<string>https://github.com/SoXeon/FundCenter.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FundCenter.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AA729C40414A05C22419EDEB94802EDB04926CD1</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/SoXeon/FundCenter.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AA729C40414A05C22419EDEB94802EDB04926CD1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AA729C40414A05C22419EDEB94802EDB04926CD1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FundCenter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
