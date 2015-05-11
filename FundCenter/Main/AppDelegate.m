@@ -89,7 +89,8 @@
     UIImage *finishedImage = [UIImage imageNamed:@"tabbar_selected_background"];
     UIImage *unfinishedImage = [UIImage imageNamed:@"tabbar_normal_background"];
     NSArray *tabBarItemImages = @[@"first", @"second", @"third", @"second"];
-    
+    NSArray *tabBarItemTitles = @[@"首页", @"消息",@"收藏", @"我的"];
+
     NSInteger index = 0;
     
     for (RDVTabBarItem *item in [[tabBarController tabBar] items]) {
@@ -99,7 +100,7 @@
         UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_normal",
                                                         [tabBarItemImages objectAtIndex:index]]];
         [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
-        
+        [item setTitle:tabBarItemTitles[index]];
         index++;
     }
     self.window.rootViewController = self.tabBarVC;

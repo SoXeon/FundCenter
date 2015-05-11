@@ -33,5 +33,9 @@
 #define XWScreenWitdh  [[UIScreen mainScreen] bounds].size.width
 #define XWScreenHeight [[UIScreen mainScreen] bounds].size.height
 
+//用户账号密码
+#define FCUserPhoneNumber @"FCUserPhoneNumber"
+#define FCUserKeyword @"FCUserKeyword"
+
 
 #endif

@@ -8,6 +8,15 @@
 
 #import "FCLoginDetailViewController.h"
 #import "JVFloatLabeledTextField.h"
+#import "FCAccount.h"
+#import "FCAccountTool.h"
+
+#import "RDVTabBarController.h"
+#import "RDVTabBarItem.h"
+#import "FCHomeViewController.h"
+#import "FCMessageViewController.h"
+#import "FCCollectionViewController.h"
+#import "FCProfileViewController.h"
 
 const static CGFloat kJVFieldFontSize = 16.0f;
 
@@ -15,13 +24,19 @@ const static CGFloat kJVFieldFloatingLabelFontSize = 11.0f;
 
 @interface FCLoginDetailViewController () <UITextFieldDelegate>
 
+@property (nonatomic, strong) JVFloatLabeledTextField *titleField;
+@property (nonatomic, strong) JVFloatLabeledTextField *keywordField;
+@property (nonatomic, strong) UIButton *loginBtn;
+
+@property (nonatomic, strong) RDVTabBarController *tabBarVC;
+
 @end
 
 @implementation FCLoginDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
     self.title = @"登录";
     
     self.view.backgroundColor = [UIColor colorWithHexString:@"F0F0F0"];
@@ -46,7 +61,8 @@ const static CGFloat kJVFieldFloatingLabelFontSize = 11.0f;
     titleField.keepBaseline = 1;
     titleField.backgroundColor = [UIColor whiteColor];
     titleField.delegate = self;
-    
+    self.titleField = titleField;
+    self.titleField.tag = 33333;
     [titleField becomeFirstResponder];
     
     
@@ -64,6 +80,8 @@ const static CGFloat kJVFieldFloatingLabelFontSize = 11.0f;
     keywordField.translatesAutoresizingMaskIntoConstraints = NO;
     keywordField.backgroundColor = [UIColor whiteColor];
     keywordField.delegate = self;
+    self.keywordField = keywordField;
+    self.keywordField.tag = 22222;
     
     UIButton *loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     
@@ -74,11 +92,68 @@ const static CGFloat kJVFieldFloatingLabelFontSize = 11.0f;
     [loginBtn addTarget:self action:@selector(loginAction) forControlEvents:UIControlEventTouchUpInside];
 
     [self.view addSubview:loginBtn];
+    self.loginBtn = loginBtn;
 }
 
 - (void)loginAction
 {
     
+    [self.titleField resignFirstResponder];
+    [self.titleField resignFirstResponder];
+    
+    if ((self.titleField.text.length > 0) && (self.keywordField.text.length > 0)) {
+        
+        FCAccount *account = [FCAccount new];
+        account.uid = [NSString stringWithFormat:@"%@+%@", self.titleField.text, self.keywordField.text];
+        account.name = self.titleField.text;
+        [[FCAccountTool sharedFCAccountTool] saveAccount:account];
+        
+        [self setupViewControllers];
+
+    } else {
+        self.loginBtn.enabled = NO;
+    }
+}
+
+- (void)setupViewControllers
+{
+    UINavigationController *firstNav = [[UINavigationController alloc] initWithRootViewController:[FCHomeViewController new]];
+    
+    UINavigationController *secondNav = [[UINavigationController alloc] initWithRootViewController:[FCMessageViewController new]];
+    
+    UINavigationController *thirdNav = [[UINavigationController alloc] initWithRootViewController:[FCCollectionViewController new]];
+    
+    UINavigationController *fourthNav = [[UINavigationController alloc] initWithRootViewController:[FCProfileViewController new]];
+    
+    self.tabBarVC = [[RDVTabBarController alloc] init];
+    [self.tabBarVC setViewControllers:@[firstNav, secondNav, thirdNav, fourthNav]];
+    
+    [self customizeTabBarForController:self.tabBarVC];
+}
+
+- (void)customizeTabBarForController:(RDVTabBarController *)tabBarController
+{
+    
+    //TODO:图标要替换掉
+    UIImage *finishedImage = [UIImage imageNamed:@"tabbar_selected_background"];
+    UIImage *unfinishedImage = [UIImage imageNamed:@"tabbar_normal_background"];
+    NSArray *tabBarItemImages = @[@"first", @"second", @"third", @"second"];
+    NSArray *tabBarItemTitles = @[@"首页", @"消息",@"收藏", @"我的"];
+    
+    NSInteger index = 0;
+    
+    for (RDVTabBarItem *item in [[tabBarController tabBar] items]) {
+        [item setBackgroundSelectedImage:finishedImage withUnselectedImage:unfinishedImage];
+        UIImage *selectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_selected",
+                                                      [tabBarItemImages objectAtIndex:index]]];
+        UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_normal",
+                                                        [tabBarItemImages objectAtIndex:index]]];
+        [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
+        [item setTitle:tabBarItemTitles[index]];
+        
+        index++;
+    }
+    self.view.window.rootViewController = self.tabBarVC;
 }
 
 - (void)done
@@ -97,21 +172,23 @@ const static CGFloat kJVFieldFloatingLabelFontSize = 11.0f;
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
     
+    if (textField.tag == 22222) {
+        
+        [FCUserDefaults setObject:textField.text forKey:FCUserKeyword];
+        
+    } else if (textField.tag == 33333){
+        
+        [FCUserDefaults setObject:textField.text forKey:FCUserPhoneNumber];
+
+    }
+    
+    [textField resignFirstResponder];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
