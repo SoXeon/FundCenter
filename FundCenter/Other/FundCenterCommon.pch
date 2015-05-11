@@ -16,6 +16,8 @@
 
 #ifdef __OBJC__
 
+#import "UIColor+HexColors.h"
+
 //UserDefaults
 #define FCUserDefaults   [NSUserDefaults standardUserDefaults]
 
@@ -26,6 +28,10 @@
 
 //设备系统判断
 #define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+//设备屏幕宽度、高度
+#define XWScreenWitdh  [[UIScreen mainScreen] bounds].size.width
+#define XWScreenHeight [[UIScreen mainScreen] bounds].size.height
 
 
 #endif

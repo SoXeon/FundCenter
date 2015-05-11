@@ -60,6 +60,12 @@
 		E22FAE911B00786D00651413 /* FCAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAE901B00786D00651413 /* FCAccountTool.m */; };
 		E22FAE951B00792800651413 /* FCAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAE941B00792800651413 /* FCAccount.m */; };
 		E22FAE991B007BC800651413 /* FCNewGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAE981B007BC800651413 /* FCNewGuideViewController.m */; };
+		E22FAEA01B008FC100651413 /* UIColor+HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAE9F1B008FC100651413 /* UIColor+HexColors.m */; };
+		E22FAEA31B0093B800651413 /* FCLoginDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAEA21B0093B800651413 /* FCLoginDetailViewController.m */; };
+		E22FAEAB1B0097F700651413 /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAEA61B0097F700651413 /* JVFloatLabeledTextField.m */; };
+		E22FAEAC1B0097F700651413 /* JVFloatLabeledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAEA81B0097F700651413 /* JVFloatLabeledTextView.m */; };
+		E22FAEAD1B0097F700651413 /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAEAA1B0097F700651413 /* NSString+TextDirectionality.m */; };
+		E22FAEAF1B009A7A00651413 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22FAEAE1B009A7A00651413 /* Reveal.framework */; };
 		E2EFB3021AFFA43B00F81575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3001AFFA43B00F81575 /* Main.storyboard */; };
 		E2EFB3041AFFA43B00F81575 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3031AFFA43B00F81575 /* Images.xcassets */; };
 		E2EFB3071AFFA43B00F81575 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3051AFFA43B00F81575 /* LaunchScreen.xib */; };
@@ -194,6 +200,17 @@
 		E22FAE941B00792800651413 /* FCAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCAccount.m; sourceTree = "<group>"; };
 		E22FAE971B007BC800651413 /* FCNewGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCNewGuideViewController.h; sourceTree = "<group>"; };
 		E22FAE981B007BC800651413 /* FCNewGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCNewGuideViewController.m; sourceTree = "<group>"; };
+		E22FAE9E1B008FC100651413 /* UIColor+HexColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColors.h"; sourceTree = "<group>"; };
+		E22FAE9F1B008FC100651413 /* UIColor+HexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColors.m"; sourceTree = "<group>"; };
+		E22FAEA11B0093B800651413 /* FCLoginDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCLoginDetailViewController.h; sourceTree = "<group>"; };
+		E22FAEA21B0093B800651413 /* FCLoginDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCLoginDetailViewController.m; sourceTree = "<group>"; };
+		E22FAEA51B0097F700651413 /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextField.h; sourceTree = "<group>"; };
+		E22FAEA61B0097F700651413 /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextField.m; sourceTree = "<group>"; };
+		E22FAEA71B0097F700651413 /* JVFloatLabeledTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextView.h; sourceTree = "<group>"; };
+		E22FAEA81B0097F700651413 /* JVFloatLabeledTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextView.m; sourceTree = "<group>"; };
+		E22FAEA91B0097F700651413 /* NSString+TextDirectionality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TextDirectionality.h"; sourceTree = "<group>"; };
+		E22FAEAA1B0097F700651413 /* NSString+TextDirectionality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextDirectionality.m"; sourceTree = "<group>"; };
+		E22FAEAE1B009A7A00651413 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		E2EFB2F01AFFA43A00F81575 /* FundCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FundCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EFB3011AFFA43B00F81575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2EFB3031AFFA43B00F81575 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
@@ -215,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E22FAE311B00629C00651413 /* QuartzCore.framework in Frameworks */,
+				E22FAEAF1B009A7A00651413 /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,9 +404,32 @@
 			name = NewGuide;
 			sourceTree = "<group>";
 		};
+		E22FAE9A1B008EC900651413 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E22FAE9E1B008FC100651413 /* UIColor+HexColors.h */,
+				E22FAE9F1B008FC100651413 /* UIColor+HexColors.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		E22FAEA41B0097F700651413 /* JVFloatLabeledTextField */ = {
+			isa = PBXGroup;
+			children = (
+				E22FAEA51B0097F700651413 /* JVFloatLabeledTextField.h */,
+				E22FAEA61B0097F700651413 /* JVFloatLabeledTextField.m */,
+				E22FAEA71B0097F700651413 /* JVFloatLabeledTextView.h */,
+				E22FAEA81B0097F700651413 /* JVFloatLabeledTextView.m */,
+				E22FAEA91B0097F700651413 /* NSString+TextDirectionality.h */,
+				E22FAEAA1B0097F700651413 /* NSString+TextDirectionality.m */,
+			);
+			path = JVFloatLabeledTextField;
+			sourceTree = "<group>";
+		};
 		E2EFB2E71AFFA43A00F81575 = {
 			isa = PBXGroup;
 			children = (
+				E22FAEAE1B009A7A00651413 /* Reveal.framework */,
 				E22FAE301B00629C00651413 /* QuartzCore.framework */,
 				E2EFB2F21AFFA43A00F81575 /* FundCenter */,
 				E2EFB30F1AFFA43B00F81575 /* FundCenterTests */,
@@ -721,6 +762,8 @@
 			children = (
 				E22FAE7F1B00760000651413 /* FCLoginViewController.h */,
 				E22FAE801B00760000651413 /* FCLoginViewController.m */,
+				E22FAEA11B0093B800651413 /* FCLoginDetailViewController.h */,
+				E22FAEA21B0093B800651413 /* FCLoginDetailViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -728,6 +771,7 @@
 		E2EFB34A1B00565100F81575 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				E22FAEA41B0097F700651413 /* JVFloatLabeledTextField */,
 				E22FAE2C1B00627C00651413 /* RKNotificationHub */,
 				E22FAE221B00612200651413 /* RDVTabBarController */,
 				E22FAE111B005E5E00651413 /* CRToast */,
@@ -741,6 +785,7 @@
 		E2EFB34B1B0056D800F81575 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				E22FAE9A1B008EC900651413 /* Category */,
 				E22FAE961B007BAE00651413 /* NewGuide */,
 				E22FAE8E1B00784D00651413 /* Tool */,
 				E2EFB34D1B00587C00F81575 /* FundCenterCommon.pch */,
@@ -858,6 +903,7 @@
 				E22FAE1E1B005E5E00651413 /* CRToastManager.m in Sources */,
 				E22FAE841B00761900651413 /* FCHomeViewController.m in Sources */,
 				E22FAE8D1B00765B00651413 /* FCProfileViewController.m in Sources */,
+				E22FAEA31B0093B800651413 /* FCLoginDetailViewController.m in Sources */,
 				E22FAD661B005A4200651413 /* AFHTTPRequestOperation.m in Sources */,
 				E22FAE011B005DA300651413 /* MKAnnotationView+WebCache.m in Sources */,
 				E22FAD8F1B005A8300651413 /* NSArray+MASAdditions.m in Sources */,
@@ -891,13 +937,16 @@
 				E22FAD681B005A4200651413 /* AFHTTPSessionManager.m in Sources */,
 				E22FAE2A1B00612200651413 /* RDVTabBarController.m in Sources */,
 				E22FAD6C1B005A4200651413 /* AFURLRequestSerialization.m in Sources */,
+				E22FAEAD1B0097F700651413 /* NSString+TextDirectionality.m in Sources */,
 				E22FAE091B005DA300651413 /* SDWebImagePrefetcher.m in Sources */,
 				E22FAE8A1B00764100651413 /* FCCollectionViewController.m in Sources */,
 				E22FAE0D1B005DA300651413 /* UIImage+WebP.m in Sources */,
 				E22FAE081B005DA300651413 /* SDWebImageManager.m in Sources */,
 				E22FAE021B005DA300651413 /* NSData+ImageContentType.m in Sources */,
 				E22FAD6E1B005A4200651413 /* AFURLSessionManager.m in Sources */,
+				E22FAEAC1B0097F700651413 /* JVFloatLabeledTextView.m in Sources */,
 				E22FAD8B1B005A8300651413 /* MASConstraintMaker.m in Sources */,
+				E22FAEAB1B0097F700651413 /* JVFloatLabeledTextField.m in Sources */,
 				E22FAE211B005E5E00651413 /* CRToastWindow.m in Sources */,
 				E2EFB3221B0052B100F81575 /* AppDelegate.m in Sources */,
 				E22FAD8A1B005A8300651413 /* MASConstraint.m in Sources */,
@@ -907,6 +956,7 @@
 				E22FAE101B005DA300651413 /* UIView+WebCacheOperation.m in Sources */,
 				E22FAE2F1B00627C00651413 /* RKNotificationHub.m in Sources */,
 				E22FAE0E1B005DA300651413 /* UIImageView+HighlightedWebCache.m in Sources */,
+				E22FAEA01B008FC100651413 /* UIColor+HexColors.m in Sources */,
 				E22FAD911B005A8300651413 /* View+MASAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1037,10 +1087,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FundCenter/Other/FundCenterCommon.pch";
 				INFOPLIST_FILE = FundCenter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1049,10 +1109,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FundCenter/Other/FundCenterCommon.pch";
 				INFOPLIST_FILE = FundCenter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
