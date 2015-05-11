@@ -17,6 +17,7 @@
 #ifdef __OBJC__
 
 #import "UIColor+HexColors.h"
+#import "UIView+Extension.h"
 
 //UserDefaults
 #define FCUserDefaults   [NSUserDefaults standardUserDefaults]

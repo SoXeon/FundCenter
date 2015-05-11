@@ -66,6 +66,7 @@
 		E22FAEAC1B0097F700651413 /* JVFloatLabeledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAEA81B0097F700651413 /* JVFloatLabeledTextView.m */; };
 		E22FAEAD1B0097F700651413 /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAEAA1B0097F700651413 /* NSString+TextDirectionality.m */; };
 		E22FAEAF1B009A7A00651413 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22FAEAE1B009A7A00651413 /* Reveal.framework */; };
+		E22FAEB21B00CCC600651413 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAEB11B00CCC600651413 /* UIView+Extension.m */; };
 		E2EFB3021AFFA43B00F81575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3001AFFA43B00F81575 /* Main.storyboard */; };
 		E2EFB3041AFFA43B00F81575 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3031AFFA43B00F81575 /* Images.xcassets */; };
 		E2EFB3071AFFA43B00F81575 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3051AFFA43B00F81575 /* LaunchScreen.xib */; };
@@ -211,6 +212,8 @@
 		E22FAEA91B0097F700651413 /* NSString+TextDirectionality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TextDirectionality.h"; sourceTree = "<group>"; };
 		E22FAEAA1B0097F700651413 /* NSString+TextDirectionality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextDirectionality.m"; sourceTree = "<group>"; };
 		E22FAEAE1B009A7A00651413 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		E22FAEB01B00CCC600651413 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		E22FAEB11B00CCC600651413 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		E2EFB2F01AFFA43A00F81575 /* FundCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FundCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EFB3011AFFA43B00F81575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2EFB3031AFFA43B00F81575 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
@@ -407,6 +410,8 @@
 		E22FAE9A1B008EC900651413 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				E22FAEB01B00CCC600651413 /* UIView+Extension.h */,
+				E22FAEB11B00CCC600651413 /* UIView+Extension.m */,
 				E22FAE9E1B008FC100651413 /* UIColor+HexColors.h */,
 				E22FAE9F1B008FC100651413 /* UIColor+HexColors.m */,
 			);
@@ -929,6 +934,7 @@
 				E22FAD8C1B005A8300651413 /* MASLayoutConstraint.m in Sources */,
 				E22FAD891B005A8300651413 /* MASCompositeConstraint.m in Sources */,
 				E22FAE871B00762D00651413 /* FCMessageViewController.m in Sources */,
+				E22FAEB21B00CCC600651413 /* UIView+Extension.m in Sources */,
 				E22FAD6D1B005A4200651413 /* AFURLResponseSerialization.m in Sources */,
 				E22FAD6B1B005A4200651413 /* AFURLConnectionOperation.m in Sources */,
 				E22FAD8E1B005A8300651413 /* MASViewConstraint.m in Sources */,
