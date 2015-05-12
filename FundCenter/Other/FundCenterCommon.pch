@@ -18,6 +18,7 @@
 
 #import "UIColor+HexColors.h"
 #import "UIView+Extension.h"
+#import "ACMacros.h"
 
 //UserDefaults
 #define FCUserDefaults   [NSUserDefaults standardUserDefaults]
