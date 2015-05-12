@@ -67,6 +67,7 @@
 		E22FAEAD1B0097F700651413 /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAEAA1B0097F700651413 /* NSString+TextDirectionality.m */; };
 		E22FAEAF1B009A7A00651413 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22FAEAE1B009A7A00651413 /* Reveal.framework */; };
 		E22FAEB21B00CCC600651413 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAEB11B00CCC600651413 /* UIView+Extension.m */; };
+		E22FAEB61B00FCAD00651413 /* MAThemeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAEB51B00FCAD00651413 /* MAThemeKit.m */; };
 		E2EFB3021AFFA43B00F81575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3001AFFA43B00F81575 /* Main.storyboard */; };
 		E2EFB3041AFFA43B00F81575 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3031AFFA43B00F81575 /* Images.xcassets */; };
 		E2EFB3071AFFA43B00F81575 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3051AFFA43B00F81575 /* LaunchScreen.xib */; };
@@ -75,6 +76,7 @@
 		E2EFB3231B0052B100F81575 /* FundCenter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2EFB31F1B0052B100F81575 /* FundCenter.xcdatamodeld */; };
 		E2EFB3241B0052B100F81575 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EFB3211B0052B100F81575 /* main.m */; };
 		E2EFB3281B00539900F81575 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3271B00539900F81575 /* Info.plist */; };
+		E2FDD8EA1B0140D400FF1DE0 /* AddTalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FDD8E91B0140D400FF1DE0 /* AddTalkViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,6 +216,8 @@
 		E22FAEAE1B009A7A00651413 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		E22FAEB01B00CCC600651413 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		E22FAEB11B00CCC600651413 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		E22FAEB41B00FCAD00651413 /* MAThemeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAThemeKit.h; sourceTree = "<group>"; };
+		E22FAEB51B00FCAD00651413 /* MAThemeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAThemeKit.m; sourceTree = "<group>"; };
 		E2EFB2F01AFFA43A00F81575 /* FundCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FundCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EFB3011AFFA43B00F81575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2EFB3031AFFA43B00F81575 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
@@ -227,6 +231,8 @@
 		E2EFB3211B0052B100F81575 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2EFB3271B00539900F81575 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		E2EFB34D1B00587C00F81575 /* FundCenterCommon.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FundCenterCommon.pch; sourceTree = "<group>"; };
+		E2FDD8E81B0140D400FF1DE0 /* AddTalkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTalkViewController.h; sourceTree = "<group>"; };
+		E2FDD8E91B0140D400FF1DE0 /* AddTalkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTalkViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -431,6 +437,15 @@
 			path = JVFloatLabeledTextField;
 			sourceTree = "<group>";
 		};
+		E22FAEB31B00FCAD00651413 /* ThemeKit */ = {
+			isa = PBXGroup;
+			children = (
+				E22FAEB41B00FCAD00651413 /* MAThemeKit.h */,
+				E22FAEB51B00FCAD00651413 /* MAThemeKit.m */,
+			);
+			path = ThemeKit;
+			sourceTree = "<group>";
+		};
 		E2EFB2E71AFFA43A00F81575 = {
 			isa = PBXGroup;
 			children = (
@@ -557,6 +572,8 @@
 			children = (
 				E22FAE851B00762D00651413 /* FCMessageViewController.h */,
 				E22FAE861B00762D00651413 /* FCMessageViewController.m */,
+				E2FDD8E81B0140D400FF1DE0 /* AddTalkViewController.h */,
+				E2FDD8E91B0140D400FF1DE0 /* AddTalkViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -776,6 +793,7 @@
 		E2EFB34A1B00565100F81575 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				E22FAEB31B00FCAD00651413 /* ThemeKit */,
 				E22FAEA41B0097F700651413 /* JVFloatLabeledTextField */,
 				E22FAE2C1B00627C00651413 /* RKNotificationHub */,
 				E22FAE221B00612200651413 /* RDVTabBarController */,
@@ -906,6 +924,7 @@
 			files = (
 				E22FAE051B005DA300651413 /* SDWebImageDecoder.m in Sources */,
 				E22FAE1E1B005E5E00651413 /* CRToastManager.m in Sources */,
+				E2FDD8EA1B0140D400FF1DE0 /* AddTalkViewController.m in Sources */,
 				E22FAE841B00761900651413 /* FCHomeViewController.m in Sources */,
 				E22FAE8D1B00765B00651413 /* FCProfileViewController.m in Sources */,
 				E22FAEA31B0093B800651413 /* FCLoginDetailViewController.m in Sources */,
@@ -914,6 +933,7 @@
 				E22FAD8F1B005A8300651413 /* NSArray+MASAdditions.m in Sources */,
 				E22FAE201B005E5E00651413 /* CRToastViewController.m in Sources */,
 				E22FAE951B00792800651413 /* FCAccount.m in Sources */,
+				E22FAEB61B00FCAD00651413 /* MAThemeKit.m in Sources */,
 				E2EFB3231B0052B100F81575 /* FundCenter.xcdatamodeld in Sources */,
 				E22FAD901B005A8300651413 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				E22FAD671B005A4200651413 /* AFHTTPRequestOperationManager.m in Sources */,

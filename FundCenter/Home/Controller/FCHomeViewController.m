@@ -7,6 +7,7 @@
 //
 
 #import "FCHomeViewController.h"
+#import "FCAccountTool.h"
 
 #define kItemSizeW 300
 
@@ -23,6 +24,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"home";
+    self.view.backgroundColor = [UIColor colorWithHexString:@"EBEBEB"];
+    
+    [self setNav];
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.itemSize = CGSizeMake(kItemSizeW + 74, kItemSizeW);
@@ -46,6 +50,27 @@
     
 }
 
+- (void)setNav
+{
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:[FCAccountTool sharedFCAccountTool].currentAccount.name style:UIBarButtonItemStylePlain target:self action:nil];
+    
+    UIBarButtonItem *refreshItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"nav_icon_IM"] style:UIBarButtonItemStyleBordered target:self action:@selector(refreshContent)];
+    
+    UIBarButtonItem *searchItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_search"] style:UIBarButtonItemStylePlain target:self action:@selector(searchItem)];
+    
+    self.navigationItem.rightBarButtonItems = @[searchItem,refreshItem];
+}
+
+- (void)refreshContent
+{
+    
+}
+
+- (void)searchItem
+{
+    
+}
+
 #pragma mark tableView Delegate & DataSource
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -64,24 +89,28 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-        cell.backgroundColor = XWRandomColor;
+        cell.backgroundColor = [UIColor whiteColor];
         
         switch (indexPath.row) {
             case 0:
             {
                 
                 cell.textLabel.text = @"其他市场";
+                cell.imageView.image = [UIImage imageNamed:@"icon_tool_Blob"];
+
             }
                 break;
             case 1:
             {
                 cell.textLabel.text = @"实时资讯";
+                cell.imageView.image = [UIImage imageNamed:@"icon_tool_ling"];
 
             }
                 break;
             case 2:
             {
                 cell.textLabel.text = @"决策案例";
+                 cell.imageView.image = [UIImage imageNamed:@"icon_tool_chart"];
             }
                 break;
             default:
@@ -89,6 +118,9 @@
         }
         
     }
+    
+    cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"common_icon_arrow.png"]];
+    
     return cell;
 }
 
@@ -118,7 +150,7 @@
         case 0:
         {
             UIImageView *iconImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
-            iconImageView.image = [UIImage imageNamed:@"kb_icon_tool_stock"];
+            iconImageView.image = [UIImage imageNamed:@"icon_tool_search"];
             iconImageView.center = cell.contentView.center;
             
             [cell.contentView addSubview:iconImageView];
@@ -137,7 +169,7 @@
         case 1:
         {
             UIImageView *iconImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
-            iconImageView.image = [UIImage imageNamed:@"kb_icon_tool_stock"];
+            iconImageView.image = [UIImage imageNamed:@"icon_tool_claultor"];
             iconImageView.center = cell.contentView.center;
             
             [cell.contentView addSubview:iconImageView];
@@ -154,7 +186,7 @@
         case 2:
         {
             UIImageView *iconImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
-            iconImageView.image = [UIImage imageNamed:@"kb_icon_tool_stock"];
+            iconImageView.image = [UIImage imageNamed:@"icon_tool_fire"];
             iconImageView.center = cell.contentView.center;
             
             [cell.contentView addSubview:iconImageView];
@@ -171,7 +203,7 @@
         case 3:
         {
             UIImageView *iconImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
-            iconImageView.image = [UIImage imageNamed:@"kb_icon_tool_stock"];
+            iconImageView.image = [UIImage imageNamed:@"icon_tool_book"];
             iconImageView.center = cell.contentView.center;
             
             [cell.contentView addSubview:iconImageView];
@@ -189,7 +221,7 @@
             break;
     }
     
-    cell.backgroundColor = XWRandomColor;
+    cell.backgroundColor = [UIColor whiteColor];
     
     return cell;
 }

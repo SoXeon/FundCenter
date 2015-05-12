@@ -19,6 +19,8 @@
 #import "FCCollectionViewController.h"
 #import "FCProfileViewController.h"
 
+#import "MAThemeKit.h"
+
 
 @interface AppDelegate ()
 
@@ -32,6 +34,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    
+    [MAThemeKit setupThemeWithPrimaryColor:[UIColor colorWithHexString:@"8FCAFF"] secondaryColor:[UIColor colorWithHexString:@"FFFFFF"] fontName:nil lightStatusBar:YES];
     
     NSString *key = @"CFBundleVersion";
     
