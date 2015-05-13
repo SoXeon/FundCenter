@@ -9,6 +9,7 @@
 #import "FCHomeViewController.h"
 #import "FCAccountTool.h"
 #import "FCFocusViewController.h"
+#import "StockTrendViewController.h"
 #import "AppDelegate.h"
 
 #define kItemSizeW 300
@@ -149,7 +150,10 @@
             break;
             case 2:
         {
-            
+            StockTrendViewController *stockTrend = [StockTrendViewController new];
+            [self.navigationController pushViewController:stockTrend animated:YES];
+            AppDelegate *deleagte =  (AppDelegate *)[UIApplication sharedApplication].delegate;
+            deleagte.tabBarVC.tabBarHidden = YES;
         }
             break;
         case 3:

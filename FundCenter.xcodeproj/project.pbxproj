@@ -14,6 +14,21 @@
 		E20BE6751B03113B00664B89 /* PNColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE66E1B03113B00664B89 /* PNColor.m */; };
 		E20BE6761B03113B00664B89 /* PNLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE6701B03113B00664B89 /* PNLineChart.m */; };
 		E20BE6791B031E0E00664B89 /* FCFocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE6781B031E0E00664B89 /* FCFocusViewController.m */; };
+		E20BE67C1B03334200664B89 /* StockTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE67B1B03334200664B89 /* StockTrendViewController.m */; };
+		E20BE6931B03350700664B89 /* XLBarPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE6801B03350700664B89 /* XLBarPagerTabStripViewController.m */; };
+		E20BE6941B03350700664B89 /* XLButtonBarPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE6821B03350700664B89 /* XLButtonBarPagerTabStripViewController.m */; };
+		E20BE6951B03350700664B89 /* XLPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE6841B03350700664B89 /* XLPagerTabStripViewController.m */; };
+		E20BE6961B03350700664B89 /* XLSegmentedPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE6861B03350700664B89 /* XLSegmentedPagerTabStripViewController.m */; };
+		E20BE6971B03350700664B89 /* XLTwitterPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE6881B03350700664B89 /* XLTwitterPagerTabStripViewController.m */; };
+		E20BE6981B03350700664B89 /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE68C1B03350700664B89 /* FXPageControl.m */; };
+		E20BE6991B03350700664B89 /* XLBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE68E1B03350700664B89 /* XLBarView.m */; };
+		E20BE69A1B03350700664B89 /* XLButtonBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE6901B03350700664B89 /* XLButtonBarView.m */; };
+		E20BE69B1B03350700664B89 /* XLButtonBarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE6921B03350700664B89 /* XLButtonBarViewCell.m */; };
+		E20BE69E1B033A3000664B89 /* SHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE69D1B033A3000664B89 /* SHTableViewController.m */; };
+		E20BE6A11B033A3C00664B89 /* BTBITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE6A01B033A3C00664B89 /* BTBITableViewController.m */; };
+		E20BE6A41B033A6100664B89 /* usaFundTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE6A31B033A6100664B89 /* usaFundTableViewController.m */; };
+		E20BE6A71B033A7400664B89 /* FundTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE6A61B033A7400664B89 /* FundTableViewController.m */; };
+		E20BE6A91B0347E800664B89 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E20BE6A81B0347E800664B89 /* ButtonCell.xib */; };
 		E22FAD661B005A4200651413 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAD541B005A4200651413 /* AFHTTPRequestOperation.m */; };
 		E22FAD671B005A4200651413 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAD561B005A4200651413 /* AFHTTPRequestOperationManager.m */; };
 		E22FAD681B005A4200651413 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAD581B005A4200651413 /* AFHTTPSessionManager.m */; };
@@ -172,6 +187,35 @@
 		E20BE6701B03113B00664B89 /* PNLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChart.m; sourceTree = "<group>"; };
 		E20BE6771B031E0E00664B89 /* FCFocusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCFocusViewController.h; sourceTree = "<group>"; };
 		E20BE6781B031E0E00664B89 /* FCFocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCFocusViewController.m; sourceTree = "<group>"; };
+		E20BE67A1B03334200664B89 /* StockTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockTrendViewController.h; sourceTree = "<group>"; };
+		E20BE67B1B03334200664B89 /* StockTrendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockTrendViewController.m; sourceTree = "<group>"; };
+		E20BE67F1B03350700664B89 /* XLBarPagerTabStripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBarPagerTabStripViewController.h; sourceTree = "<group>"; };
+		E20BE6801B03350700664B89 /* XLBarPagerTabStripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBarPagerTabStripViewController.m; sourceTree = "<group>"; };
+		E20BE6811B03350700664B89 /* XLButtonBarPagerTabStripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLButtonBarPagerTabStripViewController.h; sourceTree = "<group>"; };
+		E20BE6821B03350700664B89 /* XLButtonBarPagerTabStripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLButtonBarPagerTabStripViewController.m; sourceTree = "<group>"; };
+		E20BE6831B03350700664B89 /* XLPagerTabStripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPagerTabStripViewController.h; sourceTree = "<group>"; };
+		E20BE6841B03350700664B89 /* XLPagerTabStripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPagerTabStripViewController.m; sourceTree = "<group>"; };
+		E20BE6851B03350700664B89 /* XLSegmentedPagerTabStripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSegmentedPagerTabStripViewController.h; sourceTree = "<group>"; };
+		E20BE6861B03350700664B89 /* XLSegmentedPagerTabStripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSegmentedPagerTabStripViewController.m; sourceTree = "<group>"; };
+		E20BE6871B03350700664B89 /* XLTwitterPagerTabStripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTwitterPagerTabStripViewController.h; sourceTree = "<group>"; };
+		E20BE6881B03350700664B89 /* XLTwitterPagerTabStripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTwitterPagerTabStripViewController.m; sourceTree = "<group>"; };
+		E20BE68B1B03350700664B89 /* FXPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXPageControl.h; sourceTree = "<group>"; };
+		E20BE68C1B03350700664B89 /* FXPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXPageControl.m; sourceTree = "<group>"; };
+		E20BE68D1B03350700664B89 /* XLBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBarView.h; sourceTree = "<group>"; };
+		E20BE68E1B03350700664B89 /* XLBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBarView.m; sourceTree = "<group>"; };
+		E20BE68F1B03350700664B89 /* XLButtonBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLButtonBarView.h; sourceTree = "<group>"; };
+		E20BE6901B03350700664B89 /* XLButtonBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLButtonBarView.m; sourceTree = "<group>"; };
+		E20BE6911B03350700664B89 /* XLButtonBarViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLButtonBarViewCell.h; sourceTree = "<group>"; };
+		E20BE6921B03350700664B89 /* XLButtonBarViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLButtonBarViewCell.m; sourceTree = "<group>"; };
+		E20BE69C1B033A3000664B89 /* SHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTableViewController.h; sourceTree = "<group>"; };
+		E20BE69D1B033A3000664B89 /* SHTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTableViewController.m; sourceTree = "<group>"; };
+		E20BE69F1B033A3C00664B89 /* BTBITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTBITableViewController.h; sourceTree = "<group>"; };
+		E20BE6A01B033A3C00664B89 /* BTBITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTBITableViewController.m; sourceTree = "<group>"; };
+		E20BE6A21B033A6100664B89 /* usaFundTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usaFundTableViewController.h; sourceTree = "<group>"; };
+		E20BE6A31B033A6100664B89 /* usaFundTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = usaFundTableViewController.m; sourceTree = "<group>"; };
+		E20BE6A51B033A7400664B89 /* FundTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundTableViewController.h; sourceTree = "<group>"; };
+		E20BE6A61B033A7400664B89 /* FundTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundTableViewController.m; sourceTree = "<group>"; };
+		E20BE6A81B0347E800664B89 /* ButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
 		E22FAD531B005A4200651413 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		E22FAD541B005A4200651413 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		E22FAD551B005A4200651413 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -473,6 +517,55 @@
 				E20BE6701B03113B00664B89 /* PNLineChart.m */,
 			);
 			path = PNChart;
+			sourceTree = "<group>";
+		};
+		E20BE67D1B03350700664B89 /* XL */ = {
+			isa = PBXGroup;
+			children = (
+				E20BE67E1B03350700664B89 /* Controllers */,
+				E20BE6891B03350700664B89 /* Views */,
+			);
+			path = XL;
+			sourceTree = "<group>";
+		};
+		E20BE67E1B03350700664B89 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E20BE67F1B03350700664B89 /* XLBarPagerTabStripViewController.h */,
+				E20BE6801B03350700664B89 /* XLBarPagerTabStripViewController.m */,
+				E20BE6811B03350700664B89 /* XLButtonBarPagerTabStripViewController.h */,
+				E20BE6821B03350700664B89 /* XLButtonBarPagerTabStripViewController.m */,
+				E20BE6831B03350700664B89 /* XLPagerTabStripViewController.h */,
+				E20BE6841B03350700664B89 /* XLPagerTabStripViewController.m */,
+				E20BE6851B03350700664B89 /* XLSegmentedPagerTabStripViewController.h */,
+				E20BE6861B03350700664B89 /* XLSegmentedPagerTabStripViewController.m */,
+				E20BE6871B03350700664B89 /* XLTwitterPagerTabStripViewController.h */,
+				E20BE6881B03350700664B89 /* XLTwitterPagerTabStripViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E20BE6891B03350700664B89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E20BE68A1B03350700664B89 /* FXPageControl */,
+				E20BE68D1B03350700664B89 /* XLBarView.h */,
+				E20BE68E1B03350700664B89 /* XLBarView.m */,
+				E20BE68F1B03350700664B89 /* XLButtonBarView.h */,
+				E20BE6901B03350700664B89 /* XLButtonBarView.m */,
+				E20BE6911B03350700664B89 /* XLButtonBarViewCell.h */,
+				E20BE6921B03350700664B89 /* XLButtonBarViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E20BE68A1B03350700664B89 /* FXPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				E20BE68B1B03350700664B89 /* FXPageControl.h */,
+				E20BE68C1B03350700664B89 /* FXPageControl.m */,
+			);
+			path = FXPageControl;
 			sourceTree = "<group>";
 		};
 		E22FAD521B005A4200651413 /* AFNetworking */ = {
@@ -1140,6 +1233,17 @@
 		E2EFB3421B0055EF00F81575 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E20BE6A81B0347E800664B89 /* ButtonCell.xib */,
+				E20BE67A1B03334200664B89 /* StockTrendViewController.h */,
+				E20BE67B1B03334200664B89 /* StockTrendViewController.m */,
+				E20BE69C1B033A3000664B89 /* SHTableViewController.h */,
+				E20BE69D1B033A3000664B89 /* SHTableViewController.m */,
+				E20BE69F1B033A3C00664B89 /* BTBITableViewController.h */,
+				E20BE6A01B033A3C00664B89 /* BTBITableViewController.m */,
+				E20BE6A21B033A6100664B89 /* usaFundTableViewController.h */,
+				E20BE6A31B033A6100664B89 /* usaFundTableViewController.m */,
+				E20BE6A51B033A7400664B89 /* FundTableViewController.h */,
+				E20BE6A61B033A7400664B89 /* FundTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1202,6 +1306,7 @@
 		E2EFB34A1B00565100F81575 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				E20BE67D1B03350700664B89 /* XL */,
 				E20BE6641B03113B00664B89 /* PNChart */,
 				E2A9BB461B01F3A300A26700 /* MJExtension */,
 				E2A9BB3A1B01EF6C00A26700 /* JuheApisSDK */,
@@ -1333,6 +1438,7 @@
 				E2A9BB101B01E15000A26700 /* chat_animation1.png in Resources */,
 				E2A9BB201B01E15000A26700 /* 1.jpeg in Resources */,
 				E2A9BB1B1B01E15000A26700 /* chat_voice_record.png in Resources */,
+				E20BE6A91B0347E800664B89 /* ButtonCell.xib in Resources */,
 				E2A9BB301B01E3C100A26700 /* MJRefresh.bundle in Resources */,
 				E2A9BB131B01E15000A26700 /* chat_animation_white1.png in Resources */,
 				E2A9BB141B01E15000A26700 /* chat_animation_white2.png in Resources */,
@@ -1366,6 +1472,7 @@
 				E2A9BAD21B01E06000A26700 /* UUMessage.m in Sources */,
 				E2FDD8EA1B0140D400FF1DE0 /* AddTalkViewController.m in Sources */,
 				E2A9BAD91B01E07C00A26700 /* NSDate+Utils.m in Sources */,
+				E20BE69B1B03350700664B89 /* XLButtonBarViewCell.m in Sources */,
 				E22FAE841B00761900651413 /* FCHomeViewController.m in Sources */,
 				E2A9BB5C1B01F3A300A26700 /* NSObject+MJCoding.m in Sources */,
 				E22FAE8D1B00765B00651413 /* FCProfileViewController.m in Sources */,
@@ -1379,8 +1486,12 @@
 				E20BE6761B03113B00664B89 /* PNLineChart.m in Sources */,
 				E22FAE201B005E5E00651413 /* CRToastViewController.m in Sources */,
 				E22FAE951B00792800651413 /* FCAccount.m in Sources */,
+				E20BE69E1B033A3000664B89 /* SHTableViewController.m in Sources */,
 				E22FAEB61B00FCAD00651413 /* MAThemeKit.m in Sources */,
 				E2A9BACF1B01E06000A26700 /* UUAVAudioPlayer.m in Sources */,
+				E20BE6951B03350700664B89 /* XLPagerTabStripViewController.m in Sources */,
+				E20BE6981B03350700664B89 /* FXPageControl.m in Sources */,
+				E20BE6931B03350700664B89 /* XLBarPagerTabStripViewController.m in Sources */,
 				E2EFB3231B0052B100F81575 /* FundCenter.xcdatamodeld in Sources */,
 				E22FAD901B005A8300651413 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				E2A9BB341B01E3C100A26700 /* MJRefreshHeaderView.m in Sources */,
@@ -1401,6 +1512,7 @@
 				E2A9BAD01B01E06000A26700 /* UUImageAvatarBrowser.m in Sources */,
 				E22FAE0A1B005DA300651413 /* UIButton+WebCache.m in Sources */,
 				E22FAE1D1B005E5E00651413 /* CRToast.m in Sources */,
+				E20BE69A1B03350700664B89 /* XLButtonBarView.m in Sources */,
 				E20BE6791B031E0E00664B89 /* FCFocusViewController.m in Sources */,
 				E22FAE291B00612200651413 /* RDVTabBar.m in Sources */,
 				E2A9BB311B01E3C100A26700 /* MJRefreshBaseView.m in Sources */,
@@ -1421,6 +1533,7 @@
 				E22FAD8E1B005A8300651413 /* MASViewConstraint.m in Sources */,
 				E22FAD6A1B005A4200651413 /* AFSecurityPolicy.m in Sources */,
 				E20BE6711B03113B00664B89 /* PNBar.m in Sources */,
+				E20BE67C1B03334200664B89 /* StockTrendViewController.m in Sources */,
 				E22FAE071B005DA300651413 /* SDWebImageDownloaderOperation.m in Sources */,
 				E22FAD681B005A4200651413 /* AFHTTPSessionManager.m in Sources */,
 				E2A9BB5F1B01F3A300A26700 /* NSString+MJExtension.m in Sources */,
@@ -1430,6 +1543,7 @@
 				E22FAEAD1B0097F700651413 /* NSString+TextDirectionality.m in Sources */,
 				E2A9BAF41B01E0A900A26700 /* UIWebView+AFNetworking.m in Sources */,
 				E22FAE091B005DA300651413 /* SDWebImagePrefetcher.m in Sources */,
+				E20BE6991B03350700664B89 /* XLBarView.m in Sources */,
 				E22FAE8A1B00764100651413 /* FCCollectionViewController.m in Sources */,
 				E2A9BAED1B01E0A900A26700 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				E22FAE0D1B005DA300651413 /* UIImage+WebP.m in Sources */,
@@ -1441,21 +1555,26 @@
 				E22FAEAB1B0097F700651413 /* JVFloatLabeledTextField.m in Sources */,
 				E22FAE211B005E5E00651413 /* CRToastWindow.m in Sources */,
 				E2A9BB241B01E21C00A26700 /* ChatModel.m in Sources */,
+				E20BE6A11B033A3C00664B89 /* BTBITableViewController.m in Sources */,
 				E2EFB3221B0052B100F81575 /* AppDelegate.mm in Sources */,
 				E2A9BAD31B01E06000A26700 /* UUMessageCell.m in Sources */,
 				E20BE6721B03113B00664B89 /* PNBarChart.m in Sources */,
 				E2A9BAF21B01E0A900A26700 /* UIProgressView+AFNetworking.m in Sources */,
 				E2A9BB5E1B01F3A300A26700 /* NSObject+MJProperty.m in Sources */,
+				E20BE6A71B033A7400664B89 /* FundTableViewController.m in Sources */,
 				E22FAD8A1B005A8300651413 /* MASConstraint.m in Sources */,
+				E20BE6A41B033A6100664B89 /* usaFundTableViewController.m in Sources */,
 				E22FAE1F1B005E5E00651413 /* CRToastView.m in Sources */,
 				E22FAE911B00786D00651413 /* FCAccountTool.m in Sources */,
 				E20BE6751B03113B00664B89 /* PNColor.m in Sources */,
 				E2A9BB381B01E51900A26700 /* RootViewController.m in Sources */,
 				E2A9BAD11B01E06000A26700 /* UUInputFunctionView.m in Sources */,
 				E2EFB3241B0052B100F81575 /* main.m in Sources */,
+				E20BE6961B03350700664B89 /* XLSegmentedPagerTabStripViewController.m in Sources */,
 				E2A9BAD61B01E06000A26700 /* UUProgressHUD.m in Sources */,
 				E2A9BAEF1B01E0A900A26700 /* UIAlertView+AFNetworking.m in Sources */,
 				E22FAE101B005DA300651413 /* UIView+WebCacheOperation.m in Sources */,
+				E20BE6971B03350700664B89 /* XLTwitterPagerTabStripViewController.m in Sources */,
 				E22FAE2F1B00627C00651413 /* RKNotificationHub.m in Sources */,
 				E2A9BB621B01FB7600A26700 /* FundModel.m in Sources */,
 				E20BE6731B03113B00664B89 /* PNChart.m in Sources */,
@@ -1465,6 +1584,7 @@
 				E22FAEA01B008FC100651413 /* UIColor+HexColors.m in Sources */,
 				E2A9BAF11B01E0A900A26700 /* UIImageView+AFNetworking.m in Sources */,
 				E22FAD911B005A8300651413 /* View+MASAdditions.m in Sources */,
+				E20BE6941B03350700664B89 /* XLButtonBarPagerTabStripViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
