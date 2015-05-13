@@ -20,6 +20,7 @@
         self.nowPri = dict[@"nowPri"];
         self.todayMax = dict[@"todayMax"];
         self.todayMin = dict[@"todayMin"];
+        self.date = dict[@"date"];
     }
     return self;
 }
@@ -43,6 +44,8 @@
         self.EPS = dict[@"EPS"];
         self.priearn = dict[@"priearn"];
         self.traAmount = dict[@"traAmount"];
+        self.ustime = dict[@"dict"];
+        self.formpri = dict[@"formpri"];
     }
     return self;
 }

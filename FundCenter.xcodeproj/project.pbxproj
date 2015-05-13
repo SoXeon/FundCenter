@@ -127,6 +127,8 @@
 		E2A9BB5F1B01F3A300A26700 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A9BB571B01F3A300A26700 /* NSString+MJExtension.m */; };
 		E2A9BB621B01FB7600A26700 /* FundModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A9BB611B01FB7600A26700 /* FundModel.m */; };
 		E2A9BB651B0206D900A26700 /* FundTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A9BB641B0206D900A26700 /* FundTableViewCell.m */; };
+		E2A9BB681B02505300A26700 /* FCCollectionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A9BB671B02505300A26700 /* FCCollectionDetailViewController.m */; };
+		E2A9BB6B1B02EA6800A26700 /* FCDetailFundInfoLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A9BB6A1B02EA6800A26700 /* FCDetailFundInfoLabel.m */; };
 		E2EFB3021AFFA43B00F81575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3001AFFA43B00F81575 /* Main.storyboard */; };
 		E2EFB3041AFFA43B00F81575 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3031AFFA43B00F81575 /* Images.xcassets */; };
 		E2EFB3071AFFA43B00F81575 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2EFB3051AFFA43B00F81575 /* LaunchScreen.xib */; };
@@ -376,6 +378,10 @@
 		E2A9BB611B01FB7600A26700 /* FundModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundModel.m; sourceTree = "<group>"; };
 		E2A9BB631B0206D900A26700 /* FundTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundTableViewCell.h; sourceTree = "<group>"; };
 		E2A9BB641B0206D900A26700 /* FundTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundTableViewCell.m; sourceTree = "<group>"; };
+		E2A9BB661B02505300A26700 /* FCCollectionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCCollectionDetailViewController.h; sourceTree = "<group>"; };
+		E2A9BB671B02505300A26700 /* FCCollectionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCollectionDetailViewController.m; sourceTree = "<group>"; };
+		E2A9BB691B02EA6800A26700 /* FCDetailFundInfoLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCDetailFundInfoLabel.h; sourceTree = "<group>"; };
+		E2A9BB6A1B02EA6800A26700 /* FCDetailFundInfoLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCDetailFundInfoLabel.m; sourceTree = "<group>"; };
 		E2EFB2F01AFFA43A00F81575 /* FundCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FundCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EFB3011AFFA43B00F81575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2EFB3031AFFA43B00F81575 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
@@ -993,6 +999,8 @@
 			children = (
 				E22FAE881B00764100651413 /* FCCollectionViewController.h */,
 				E22FAE891B00764100651413 /* FCCollectionViewController.m */,
+				E2A9BB661B02505300A26700 /* FCCollectionDetailViewController.h */,
+				E2A9BB671B02505300A26700 /* FCCollectionDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1011,6 +1019,8 @@
 			children = (
 				E2A9BB631B0206D900A26700 /* FundTableViewCell.h */,
 				E2A9BB641B0206D900A26700 /* FundTableViewCell.m */,
+				E2A9BB691B02EA6800A26700 /* FCDetailFundInfoLabel.h */,
+				E2A9BB6A1B02EA6800A26700 /* FCDetailFundInfoLabel.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1334,6 +1344,7 @@
 				E2A9BB5D1B01F3A300A26700 /* NSObject+MJKeyValue.m in Sources */,
 				E22FAE041B005DA300651413 /* SDWebImageCompat.m in Sources */,
 				E2A9BB591B01F3A300A26700 /* MJFoundation.m in Sources */,
+				E2A9BB681B02505300A26700 /* FCCollectionDetailViewController.m in Sources */,
 				E22FAE031B005DA300651413 /* SDImageCache.m in Sources */,
 				E22FAE0C1B005DA300651413 /* UIImage+MultiFormat.m in Sources */,
 				E22FAE0B1B005DA300651413 /* UIImage+GIF.m in Sources */,
@@ -1359,6 +1370,7 @@
 				E2A9BB5B1B01F3A300A26700 /* MJType.m in Sources */,
 				E22FAEB21B00CCC600651413 /* UIView+Extension.m in Sources */,
 				E22FAD6D1B005A4200651413 /* AFURLResponseSerialization.m in Sources */,
+				E2A9BB6B1B02EA6800A26700 /* FCDetailFundInfoLabel.m in Sources */,
 				E22FAD6B1B005A4200651413 /* AFURLConnectionOperation.m in Sources */,
 				E22FAD8E1B005A8300651413 /* MASViewConstraint.m in Sources */,
 				E22FAD6A1B005A4200651413 /* AFSecurityPolicy.m in Sources */,

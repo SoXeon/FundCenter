@@ -17,6 +17,7 @@
 @property (nonatomic, copy) NSString *nowPri;
 @property (nonatomic, copy) NSString *todayMax;
 @property (nonatomic, copy) NSString *todayMin;
+@property (nonatomic, copy) NSString *date;
 
 - (id)initWithDict:(NSDictionary *)dict;
 
@@ -36,6 +37,8 @@
 @property (nonatomic, copy) NSString *EPS;//每股收益
 @property (nonatomic, copy) NSString *priearn;//市盈率
 @property (nonatomic, copy) NSString *traAmount;//成交量
+@property (nonatomic, copy) NSString *ustime;
+@property (nonatomic, copy) NSString *formpri;
 - (id)initWithDict:(NSDictionary *)dict;
 
 
