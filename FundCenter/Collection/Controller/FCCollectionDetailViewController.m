@@ -10,10 +10,13 @@
 #import "FundModel.h"
 #import "FCDetailFundInfoLabel.h"
 #import "UIImageView+WebCache.h"
+#import "PNChart.h"
 
 @interface FCCollectionDetailViewController ()
 
 @property (nonatomic, strong) UIImageView *gopictureData;
+@property (strong, nonatomic) UIButton *closeTableViewBtn;
+
 
 @end
 
@@ -23,6 +26,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor grayColor];
+    
     
     if (self.isUSA) {
         usaFundModel *usaData = (usaFundModel *)self.detailInfo[0];
@@ -36,7 +40,45 @@
     
     [self setBottomView];
     
+    [self addAwesomeChart];
+    
+    self.closeTableViewBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.closeTableViewBtn setImage:[UIImage imageNamed:@"circle-cross"] forState:UIControlStateNormal];
+    [self.closeTableViewBtn addTarget:self action:@selector(closeViewController) forControlEvents:UIControlEventTouchUpInside];
+    self.closeTableViewBtn.frame = CGRectMake(XWScreenWitdh - 45, 20, 40, 40);
+    [self.view addSubview:self.closeTableViewBtn];
+
 }
+
+- (void)addAwesomeChart
+{
+    UIView *baseView = [[UIView alloc]initWithFrame:CGRectMake(10, 740 + 20, XWScreenWitdh - 20, 230)];
+    baseView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:baseView];
+    
+    UILabel * barChartLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, SCREEN_WIDTH, 30)];
+    barChartLabel.text = @"Detail Info";
+    barChartLabel.textColor = PNFreshGreen;
+    barChartLabel.font = [UIFont fontWithName:@"Avenir-Medium" size:23.0];
+    barChartLabel.textAlignment = NSTextAlignmentCenter;
+    
+    PNChart * barChart = [[PNChart alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(barChartLabel.frame), SCREEN_WIDTH, 180.0)];
+    barChart.backgroundColor = [UIColor clearColor];
+    barChart.type = PNBarType;
+    [barChart setXLabels:@[@"EPS",@"limit",@"uppic",@"beta",@"divident"]];
+    
+    [barChart setYValues:@[@"1",@"4",@"2",@"6",@"3"]];
+    [barChart strokeChart];
+    [baseView addSubview:barChartLabel];
+    [baseView addSubview:barChart];
+    
+}
+
+- (void)closeViewController
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 - (void)setTopView
 {
@@ -132,7 +174,33 @@
         
     } else {
         FundModel *nomarlData = (FundModel *)self.detailInfo[0];
+        dapandModel *dapandData = (dapandModel *)self.detailInfo[1];
         currentPri.text = nomarlData.nowPri;
+        currentLimit.text = dapandData.rate;
+        currentUppic.text = dapandData.dot;
+        
+        if ([dapandData.rate floatValue] > 0.00) {
+            currentLimit.text = [NSString stringWithFormat:@"+%@%%", dapandData.rate];
+            currentLimit.textColor = [UIColor redColor];
+            currentPri.textColor = [UIColor redColor];
+            currentUppic.textColor = [UIColor redColor];
+        } else {
+            currentLimit.text = [NSString stringWithFormat:@"-%@%%", dapandData.rate];
+            currentLimit.textColor = [UIColor greenColor];
+            currentPri.textColor = [UIColor greenColor];
+            currentUppic.textColor = [UIColor greenColor];
+            
+        }
+        
+        todayKai.bottomLabel.text = nomarlData.todayStartPri;
+        yesShou.bottomLabel.text = nomarlData.yestodEndPri;
+        topPri.bottomLabel.text = nomarlData.todayMax;
+        lowPri.bottomLabel.text = nomarlData.todayMin;
+        
+        changeLang.bottomLabel.text = dapandData.traNumber;
+        shiYingLiu.bottomLabel.text = dapandData.dot;
+        meigujingzichan.bottomLabel.text = @"--";
+        zongshizhi.bottomLabel.text = @"--";
     }
 }
 
@@ -156,7 +224,17 @@
     self.gopictureData = [[UIImageView alloc] init];
     self.gopictureData.frame = CGRectMake(10, CGRectGetMaxY(segment.frame), 545, 300);
     self.gopictureData.centerX = segment.centerX;
-    self.gopictureData.image = [UIImage imageNamed:@"pictureHolder"];
+    
+    
+    if(self.isUSA) {
+        usaGopictureModel *gopictureData = (usaGopictureModel *)self.detailInfo[1];
+        [self.gopictureData sd_setImageWithURL:[NSURL URLWithString:gopictureData.minurl] placeholderImage:[UIImage imageNamed:@"pictureHolder"] options:SDWebImageRetryFailed | SDWebImageLowPriority completed:nil];
+    } else {
+        gopictureModel *nomarlData = (gopictureModel *)self.detailInfo[2];
+        [self.gopictureData sd_setImageWithURL:[NSURL URLWithString:nomarlData.minurl] placeholderImage:[UIImage imageNamed:@"pictureHolder"] options:SDWebImageRetryFailed | SDWebImageLowPriority completed:nil];
+    }
+    
+    
     [baseView addSubview:self.gopictureData];
 
 }
@@ -171,6 +249,13 @@
         NSArray *gopictureArray = @[gopictureData.minurl, gopictureData.min_weekpic, gopictureData.dayurl, gopictureData.weekurl, gopictureData.monthurl];
         
         [self.gopictureData sd_setImageWithURL:[NSURL URLWithString:gopictureArray[index]] placeholderImage:[UIImage imageNamed:@"pictureHolder"] options:SDWebImageRetryFailed | SDWebImageLowPriority completed:nil];
+        
+    } else {
+        gopictureModel *gopicureData = (gopictureModel *)self.detailInfo[2];
+        
+        NSArray *nomarlArray = @[gopicureData.minurl, gopicureData.dayurl, gopicureData.dayurl, gopicureData.weekurl, gopicureData.monthurl];
+        
+        [self.gopictureData sd_setImageWithURL:[NSURL URLWithString:nomarlArray[index]] placeholderImage:[UIImage imageNamed:@"pictureHolder"] options:SDWebImageRetryFailed | SDWebImageLowPriority completed:nil];
     }
 }
 

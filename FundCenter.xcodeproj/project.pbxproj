@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E20BE6711B03113B00664B89 /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE6661B03113B00664B89 /* PNBar.m */; };
+		E20BE6721B03113B00664B89 /* PNBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE6681B03113B00664B89 /* PNBarChart.m */; };
+		E20BE6731B03113B00664B89 /* PNChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE66A1B03113B00664B89 /* PNChart.m */; };
+		E20BE6741B03113B00664B89 /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE66C1B03113B00664B89 /* PNChartLabel.m */; };
+		E20BE6751B03113B00664B89 /* PNColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE66E1B03113B00664B89 /* PNColor.m */; };
+		E20BE6761B03113B00664B89 /* PNLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE6701B03113B00664B89 /* PNLineChart.m */; };
 		E22FAD661B005A4200651413 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAD541B005A4200651413 /* AFHTTPRequestOperation.m */; };
 		E22FAD671B005A4200651413 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAD561B005A4200651413 /* AFHTTPRequestOperationManager.m */; };
 		E22FAD681B005A4200651413 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAD581B005A4200651413 /* AFHTTPSessionManager.m */; };
@@ -151,6 +157,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E20BE6651B03113B00664B89 /* PNBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBar.h; sourceTree = "<group>"; };
+		E20BE6661B03113B00664B89 /* PNBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBar.m; sourceTree = "<group>"; };
+		E20BE6671B03113B00664B89 /* PNBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBarChart.h; sourceTree = "<group>"; };
+		E20BE6681B03113B00664B89 /* PNBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBarChart.m; sourceTree = "<group>"; };
+		E20BE6691B03113B00664B89 /* PNChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChart.h; sourceTree = "<group>"; };
+		E20BE66A1B03113B00664B89 /* PNChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNChart.m; sourceTree = "<group>"; };
+		E20BE66B1B03113B00664B89 /* PNChartLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChartLabel.h; sourceTree = "<group>"; };
+		E20BE66C1B03113B00664B89 /* PNChartLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNChartLabel.m; sourceTree = "<group>"; };
+		E20BE66D1B03113B00664B89 /* PNColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNColor.h; sourceTree = "<group>"; };
+		E20BE66E1B03113B00664B89 /* PNColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNColor.m; sourceTree = "<group>"; };
+		E20BE66F1B03113B00664B89 /* PNLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChart.h; sourceTree = "<group>"; };
+		E20BE6701B03113B00664B89 /* PNLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChart.m; sourceTree = "<group>"; };
 		E22FAD531B005A4200651413 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		E22FAD541B005A4200651413 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		E22FAD551B005A4200651413 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -435,6 +453,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E20BE6641B03113B00664B89 /* PNChart */ = {
+			isa = PBXGroup;
+			children = (
+				E20BE6651B03113B00664B89 /* PNBar.h */,
+				E20BE6661B03113B00664B89 /* PNBar.m */,
+				E20BE6671B03113B00664B89 /* PNBarChart.h */,
+				E20BE6681B03113B00664B89 /* PNBarChart.m */,
+				E20BE6691B03113B00664B89 /* PNChart.h */,
+				E20BE66A1B03113B00664B89 /* PNChart.m */,
+				E20BE66B1B03113B00664B89 /* PNChartLabel.h */,
+				E20BE66C1B03113B00664B89 /* PNChartLabel.m */,
+				E20BE66D1B03113B00664B89 /* PNColor.h */,
+				E20BE66E1B03113B00664B89 /* PNColor.m */,
+				E20BE66F1B03113B00664B89 /* PNLineChart.h */,
+				E20BE6701B03113B00664B89 /* PNLineChart.m */,
+			);
+			path = PNChart;
+			sourceTree = "<group>";
+		};
 		E22FAD521B005A4200651413 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -1160,6 +1197,7 @@
 		E2EFB34A1B00565100F81575 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				E20BE6641B03113B00664B89 /* PNChart */,
 				E2A9BB461B01F3A300A26700 /* MJExtension */,
 				E2A9BB3A1B01EF6C00A26700 /* JuheApisSDK */,
 				E2A9BB251B01E3C100A26700 /* MJRefresh */,
@@ -1332,6 +1370,8 @@
 				E2A9BAF01B01E0A900A26700 /* UIButton+AFNetworking.m in Sources */,
 				E22FAE011B005DA300651413 /* MKAnnotationView+WebCache.m in Sources */,
 				E22FAD8F1B005A8300651413 /* NSArray+MASAdditions.m in Sources */,
+				E20BE6741B03113B00664B89 /* PNChartLabel.m in Sources */,
+				E20BE6761B03113B00664B89 /* PNLineChart.m in Sources */,
 				E22FAE201B005E5E00651413 /* CRToastViewController.m in Sources */,
 				E22FAE951B00792800651413 /* FCAccount.m in Sources */,
 				E22FAEB61B00FCAD00651413 /* MAThemeKit.m in Sources */,
@@ -1374,6 +1414,7 @@
 				E22FAD6B1B005A4200651413 /* AFURLConnectionOperation.m in Sources */,
 				E22FAD8E1B005A8300651413 /* MASViewConstraint.m in Sources */,
 				E22FAD6A1B005A4200651413 /* AFSecurityPolicy.m in Sources */,
+				E20BE6711B03113B00664B89 /* PNBar.m in Sources */,
 				E22FAE071B005DA300651413 /* SDWebImageDownloaderOperation.m in Sources */,
 				E22FAD681B005A4200651413 /* AFHTTPSessionManager.m in Sources */,
 				E2A9BB5F1B01F3A300A26700 /* NSString+MJExtension.m in Sources */,
@@ -1396,11 +1437,13 @@
 				E2A9BB241B01E21C00A26700 /* ChatModel.m in Sources */,
 				E2EFB3221B0052B100F81575 /* AppDelegate.mm in Sources */,
 				E2A9BAD31B01E06000A26700 /* UUMessageCell.m in Sources */,
+				E20BE6721B03113B00664B89 /* PNBarChart.m in Sources */,
 				E2A9BAF21B01E0A900A26700 /* UIProgressView+AFNetworking.m in Sources */,
 				E2A9BB5E1B01F3A300A26700 /* NSObject+MJProperty.m in Sources */,
 				E22FAD8A1B005A8300651413 /* MASConstraint.m in Sources */,
 				E22FAE1F1B005E5E00651413 /* CRToastView.m in Sources */,
 				E22FAE911B00786D00651413 /* FCAccountTool.m in Sources */,
+				E20BE6751B03113B00664B89 /* PNColor.m in Sources */,
 				E2A9BB381B01E51900A26700 /* RootViewController.m in Sources */,
 				E2A9BAD11B01E06000A26700 /* UUInputFunctionView.m in Sources */,
 				E2EFB3241B0052B100F81575 /* main.m in Sources */,
@@ -1409,6 +1452,7 @@
 				E22FAE101B005DA300651413 /* UIView+WebCacheOperation.m in Sources */,
 				E22FAE2F1B00627C00651413 /* RKNotificationHub.m in Sources */,
 				E2A9BB621B01FB7600A26700 /* FundModel.m in Sources */,
+				E20BE6731B03113B00664B89 /* PNChart.m in Sources */,
 				E22FAE0E1B005DA300651413 /* UIImageView+HighlightedWebCache.m in Sources */,
 				E2A9BB581B01F3A300A26700 /* MJConst.m in Sources */,
 				E2A9BB321B01E3C100A26700 /* MJRefreshConst.m in Sources */,

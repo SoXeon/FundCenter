@@ -24,15 +24,6 @@
 
 @implementation FCCollectionViewController
 
-//- (NSArray *)fundsGroup
-//{
-//    if (_fundsGroup == nil) {
-//        //,@"sh600570",@"sh600637",@"sh600325",@"sh600638"
-//        _fundsGroup = @[@"BABA"];
-//    }
-//    return _fundsGroup;
-//}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -82,7 +73,7 @@
     self.fundsResults = [NSMutableArray array];
     
     //,@"sh600570",@"sh600637",@"sh600325",@"sh600638"
-    self.fundsGroup = @[@"BABA"];
+    self.fundsGroup = @[@"BABA", @"sh600637"];
     
     for (int i = 0; i < self.fundsGroup.count; i++) {
         
@@ -181,7 +172,7 @@
             limitString = dapandInfo.rate;
         }
         
-        UILabel *currentLimit = [[UILabel alloc] initWithFrame:CGRectMake(XWScreenWitdh - 130, 0, 100, 44)];
+        UILabel *currentLimit = [[UILabel alloc] initWithFrame:CGRectMake(XWScreenWitdh - 130, 1, 100, 42)];
         currentLimit.text = [NSString stringWithFormat:@"%@%%",limitString];
         currentLimit.font = [UIFont systemFontOfSize:18.0];
         currentLimit.textColor = [UIColor whiteColor];
@@ -232,6 +223,7 @@
     UIView *headerView = [UIView new];
     headerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     headerView.frame = CGRectMake(0, 0, XWScreenWitdh, 88 + 44);
+    [headerView setBackgroundColor:[UIColor whiteColor]];
     
     UIImageView *currentBigDataImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, XWScreenWitdh, 44 * 2)];
     currentBigDataImageView.image = [UIImage imageNamed:@"currentBigData"];
