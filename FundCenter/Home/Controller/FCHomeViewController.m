@@ -8,6 +8,8 @@
 
 #import "FCHomeViewController.h"
 #import "FCAccountTool.h"
+#import "FCFocusViewController.h"
+#import "AppDelegate.h"
 
 #define kItemSizeW 300
 
@@ -132,7 +134,32 @@
 #pragma mark collectionView Delegate & DataSource & layout
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    switch (indexPath.row) {
+        case 0:
+        {
+            FCFocusViewController *focus = [FCFocusViewController new];
+            [self presentViewController:focus animated:YES completion:nil];
+        }
+            break;
+            case 1:
+        {
+            AppDelegate *deleagte =  (AppDelegate *)[UIApplication sharedApplication].delegate;
+            deleagte.tabBarVC.selectedIndex = 2;
+        }
+            break;
+            case 2:
+        {
+            
+        }
+            break;
+        case 3:
+        {
+            
+        }
+            break;
+        default:
+            break;
+    }
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section

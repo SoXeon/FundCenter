@@ -11,9 +11,6 @@
 
 #import "FCLoginViewController.h"
 #import "FCNewGuideViewController.h"
-
-#import "RDVTabBarController.h"
-#import "RDVTabBarItem.h"
 #import "FCHomeViewController.h"
 #import "FCMessageViewController.h"
 #import "FCCollectionViewController.h"
@@ -23,8 +20,6 @@
 
 
 @interface AppDelegate ()
-
-@property (nonatomic, strong) RDVTabBarController *tabBarVC;
 
 @end
 

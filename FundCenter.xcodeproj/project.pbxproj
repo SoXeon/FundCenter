@@ -13,6 +13,7 @@
 		E20BE6741B03113B00664B89 /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE66C1B03113B00664B89 /* PNChartLabel.m */; };
 		E20BE6751B03113B00664B89 /* PNColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE66E1B03113B00664B89 /* PNColor.m */; };
 		E20BE6761B03113B00664B89 /* PNLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE6701B03113B00664B89 /* PNLineChart.m */; };
+		E20BE6791B031E0E00664B89 /* FCFocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20BE6781B031E0E00664B89 /* FCFocusViewController.m */; };
 		E22FAD661B005A4200651413 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAD541B005A4200651413 /* AFHTTPRequestOperation.m */; };
 		E22FAD671B005A4200651413 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAD561B005A4200651413 /* AFHTTPRequestOperationManager.m */; };
 		E22FAD681B005A4200651413 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FAD581B005A4200651413 /* AFHTTPSessionManager.m */; };
@@ -169,6 +170,8 @@
 		E20BE66E1B03113B00664B89 /* PNColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNColor.m; sourceTree = "<group>"; };
 		E20BE66F1B03113B00664B89 /* PNLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChart.h; sourceTree = "<group>"; };
 		E20BE6701B03113B00664B89 /* PNLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChart.m; sourceTree = "<group>"; };
+		E20BE6771B031E0E00664B89 /* FCFocusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCFocusViewController.h; sourceTree = "<group>"; };
+		E20BE6781B031E0E00664B89 /* FCFocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCFocusViewController.m; sourceTree = "<group>"; };
 		E22FAD531B005A4200651413 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		E22FAD541B005A4200651413 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		E22FAD551B005A4200651413 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -1158,6 +1161,8 @@
 		E2EFB3451B0055F600F81575 /* TopStock */ = {
 			isa = PBXGroup;
 			children = (
+				E20BE6771B031E0E00664B89 /* FCFocusViewController.h */,
+				E20BE6781B031E0E00664B89 /* FCFocusViewController.m */,
 			);
 			path = TopStock;
 			sourceTree = "<group>";
@@ -1396,6 +1401,7 @@
 				E2A9BAD01B01E06000A26700 /* UUImageAvatarBrowser.m in Sources */,
 				E22FAE0A1B005DA300651413 /* UIButton+WebCache.m in Sources */,
 				E22FAE1D1B005E5E00651413 /* CRToast.m in Sources */,
+				E20BE6791B031E0E00664B89 /* FCFocusViewController.m in Sources */,
 				E22FAE291B00612200651413 /* RDVTabBar.m in Sources */,
 				E2A9BB311B01E3C100A26700 /* MJRefreshBaseView.m in Sources */,
 				E22FAE811B00760000651413 /* FCLoginViewController.m in Sources */,
