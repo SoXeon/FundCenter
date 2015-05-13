@@ -30,10 +30,10 @@
 
 -(NSArray *)childViewControllersForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController
 {
-    SHTableViewController *shtableViewController = [[SHTableViewController alloc] initWithStyle:UITableViewStylePlain];
-    BTBITableViewController *bitVIewController = [[BTBITableViewController alloc] initWithStyle:UITableViewStyleGrouped];
-    usaFundTableViewController *usaViewController = [[usaFundTableViewController alloc] initWithStyle:UITableViewStylePlain];
-    FundTableViewController *fundtableViewController = [[FundTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    SHTableViewController *shtableViewController = [[SHTableViewController alloc] init];
+    BTBITableViewController *bitVIewController = [[BTBITableViewController alloc] init];
+    usaFundTableViewController *usaViewController = [[usaFundTableViewController alloc] init];
+    FundTableViewController *fundtableViewController = [[FundTableViewController alloc] init];
     
     return @[shtableViewController, bitVIewController, usaViewController, fundtableViewController];
 }

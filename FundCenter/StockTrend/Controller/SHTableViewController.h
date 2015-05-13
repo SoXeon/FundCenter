@@ -10,6 +10,6 @@
 #import "XLPagerTabStripViewController.h"
 
 
-@interface SHTableViewController : UITableViewController <XLPagerTabStripChildItem>
+@interface SHTableViewController : UIViewController <XLPagerTabStripChildItem>
 
 @end
