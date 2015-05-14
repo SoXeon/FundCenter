@@ -11,12 +11,12 @@
 #import "FCAccount.h"
 #import "FCAccountTool.h"
 
-#import "RDVTabBarController.h"
-#import "RDVTabBarItem.h"
 #import "FCHomeViewController.h"
 #import "FCMessageViewController.h"
 #import "FCCollectionViewController.h"
 #import "FCProfileViewController.h"
+
+#import "AppDelegate.h"
 
 const static CGFloat kJVFieldFontSize = 16.0f;
 
@@ -27,8 +27,6 @@ const static CGFloat kJVFieldFloatingLabelFontSize = 11.0f;
 @property (nonatomic, strong) JVFloatLabeledTextField *titleField;
 @property (nonatomic, strong) JVFloatLabeledTextField *keywordField;
 @property (nonatomic, strong) UIButton *loginBtn;
-
-@property (nonatomic, strong) RDVTabBarController *tabBarVC;
 
 @end
 
@@ -99,7 +97,7 @@ const static CGFloat kJVFieldFloatingLabelFontSize = 11.0f;
 {
     
     [self.titleField resignFirstResponder];
-    [self.titleField resignFirstResponder];
+    [self.keywordField resignFirstResponder];
     
     if ((self.titleField.text.length > 0) && (self.keywordField.text.length > 0)) {
         
@@ -108,52 +106,14 @@ const static CGFloat kJVFieldFloatingLabelFontSize = 11.0f;
         account.name = self.titleField.text;
         [[FCAccountTool sharedFCAccountTool] saveAccount:account];
         
-        [self setupViewControllers];
+        AppDelegate *deleagte =  (AppDelegate *)[UIApplication sharedApplication].delegate;
+        
+        self.view.window.rootViewController = deleagte.tabBarVC;
 
+        
     } else {
         self.loginBtn.enabled = NO;
     }
-}
-
-- (void)setupViewControllers
-{
-    UINavigationController *firstNav = [[UINavigationController alloc] initWithRootViewController:[FCHomeViewController new]];
-    
-    UINavigationController *secondNav = [[UINavigationController alloc] initWithRootViewController:[FCMessageViewController new]];
-    
-    UINavigationController *thirdNav = [[UINavigationController alloc] initWithRootViewController:[FCCollectionViewController new]];
-    
-    UINavigationController *fourthNav = [[UINavigationController alloc] initWithRootViewController:[FCProfileViewController new]];
-    
-    self.tabBarVC = [[RDVTabBarController alloc] init];
-    [self.tabBarVC setViewControllers:@[firstNav, secondNav, thirdNav, fourthNav]];
-    
-    [self customizeTabBarForController:self.tabBarVC];
-}
-
-- (void)customizeTabBarForController:(RDVTabBarController *)tabBarController
-{
-    
-    //TODO:图标要替换掉
-    UIImage *finishedImage = [UIImage imageNamed:@"tabbar_selected_background"];
-    UIImage *unfinishedImage = [UIImage imageNamed:@"tabbar_normal_background"];
-    NSArray *tabBarItemImages = @[@"first", @"second", @"third", @"second"];
-    NSArray *tabBarItemTitles = @[@"首页", @"消息",@"收藏", @"我的"];
-    
-    NSInteger index = 0;
-    
-    for (RDVTabBarItem *item in [[tabBarController tabBar] items]) {
-        [item setBackgroundSelectedImage:finishedImage withUnselectedImage:unfinishedImage];
-        UIImage *selectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_selected",
-                                                      [tabBarItemImages objectAtIndex:index]]];
-        UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_normal",
-                                                        [tabBarItemImages objectAtIndex:index]]];
-        [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
-        [item setTitle:tabBarItemTitles[index]];
-        
-        index++;
-    }
-    self.view.window.rootViewController = self.tabBarVC;
 }
 
 - (void)done

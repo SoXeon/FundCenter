@@ -40,12 +40,13 @@
     
     NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
     
+    [self setupViewControllers];
+    
     if ([currentVersion isEqualToString:lastVersion]) {
         
         application.statusBarHidden = NO;
         if ([FCAccountTool sharedFCAccountTool].currentAccount) {
             
-            [self setupViewControllers];
             
         } else {
             

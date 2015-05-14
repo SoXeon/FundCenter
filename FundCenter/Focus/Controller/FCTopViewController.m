@@ -8,6 +8,7 @@
 
 #import "FCTopViewController.h"
 #import "PNChart.h"
+#import "AppDelegate.h"
 
 #define ARC4RANDOM_MAX 0x100000000
 
@@ -21,6 +22,16 @@
 @end
 
 @implementation FCTopViewController
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    AppDelegate *deleagte =  (AppDelegate *)[UIApplication sharedApplication].delegate;
+    deleagte.tabBarVC.tabBarHidden = NO;
+    
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -122,7 +133,7 @@
     //For Scatter Chart
     
     UILabel * lastLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(pieChart.frame) + 20, SCREEN_WIDTH, 30)];
-    lastLabel.text = @"涨跌幅";
+    lastLabel.text = @"股票涨跌幅";
     lastLabel.textColor = PNDarkBlue;
     lastLabel.font = [UIFont fontWithName:@"Avenir-Medium" size:23.0];
     lastLabel.textAlignment = NSTextAlignmentCenter;

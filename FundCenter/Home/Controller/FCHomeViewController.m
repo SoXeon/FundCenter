@@ -12,6 +12,7 @@
 #import "StockTrendViewController.h"
 #import "FCTopViewController.h"
 #import "AppDelegate.h"
+#import "TOWebViewController.h"
 
 #define kItemSizeW 300
 
@@ -79,6 +80,28 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    NSString *webURL;
+    
+    switch (indexPath.row) {
+        case 0:
+            webURL = @"http://www.howbuy.com/fund/000033/";
+            break;
+            case 1:
+            webURL = @"http://caifu.baidu.com";
+            break;
+            case 2:
+            webURL = @"http://stock.10jqka.com.cn/api/znxg/index.html";
+            break;
+        default:
+            break;
+    }
+    
+    
+    TOWebViewController *webVC = [[TOWebViewController alloc]initWithURL:[NSURL URLWithString:webURL]];
+    
+    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:webVC] animated:YES completion:^{
+    }];
 
 }
 
