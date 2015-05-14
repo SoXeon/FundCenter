@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "XLPagerTabStripViewController.h"
 
-@interface BTBITableViewController : UITableViewController <XLPagerTabStripChildItem>
+@interface BTBITableViewController : UIViewController <XLPagerTabStripChildItem>
 
 @end

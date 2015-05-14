@@ -58,7 +58,8 @@
     layout.itemSize = CGSizeMake(kTopItemSizeW, 100);
     layout.minimumInteritemSpacing = 5;
     
-    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, XWScreenWitdh, 360) collectionViewLayout:layout];
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 66, XWScreenWitdh, 360) collectionViewLayout:layout];
+    self.collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:kCollectionItemID];
     self.collectionView.delegate = self;

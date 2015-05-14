@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "XLPagerTabStripViewController.h"
 
-@interface FundTableViewController : UITableViewController <XLPagerTabStripChildItem>
+@interface FundTableViewController : UIViewController <XLPagerTabStripChildItem>
 
 @end
