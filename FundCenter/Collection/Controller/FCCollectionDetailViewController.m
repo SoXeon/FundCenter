@@ -56,22 +56,6 @@
     baseView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:baseView];
     
-    UILabel * barChartLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, SCREEN_WIDTH, 30)];
-    barChartLabel.text = @"Detail Info";
-    barChartLabel.textColor = PNFreshGreen;
-    barChartLabel.font = [UIFont fontWithName:@"Avenir-Medium" size:23.0];
-    barChartLabel.textAlignment = NSTextAlignmentCenter;
-    
-    PNChart * barChart = [[PNChart alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(barChartLabel.frame), SCREEN_WIDTH, 180.0)];
-    barChart.backgroundColor = [UIColor clearColor];
-    barChart.type = PNBarType;
-    [barChart setXLabels:@[@"EPS",@"limit",@"uppic",@"beta",@"divident"]];
-    
-    [barChart setYValues:@[@"1",@"4",@"2",@"6",@"3"]];
-    [barChart strokeChart];
-    [baseView addSubview:barChartLabel];
-    [baseView addSubview:barChart];
-    
 }
 
 - (void)closeViewController

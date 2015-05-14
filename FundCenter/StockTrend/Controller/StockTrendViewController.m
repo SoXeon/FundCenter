@@ -35,7 +35,7 @@
     usaFundTableViewController *usaViewController = [[usaFundTableViewController alloc] init];
     FundTableViewController *fundtableViewController = [[FundTableViewController alloc] init];
     
-    return @[shtableViewController, bitVIewController, usaViewController, fundtableViewController];
+    return @[shtableViewController,usaViewController, fundtableViewController,bitVIewController];
 }
 
 - (void)viewDidLoad {

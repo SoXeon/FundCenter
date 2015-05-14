@@ -11,10 +11,17 @@
 
 @interface PNBar : UIView
 
+- (void)rollBack;
+
 @property (nonatomic) float grade;
+@property (nonatomic) CAShapeLayer *chartLine;
+@property (nonatomic) UIColor *barColor;
+@property (nonatomic) UIColor *barColorGradientStart;
+@property (nonatomic) CGFloat barRadius;
+@property (nonatomic) CAShapeLayer *gradientMask;
 
-@property (nonatomic,strong) CAShapeLayer * chartLine;
+@property (nonatomic) CAShapeLayer *gradeLayer;
+@property (nonatomic) CATextLayer* textLayer;
 
-@property (nonatomic, strong) UIColor * barColor;
 
 @end
