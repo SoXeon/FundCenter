@@ -764,6 +764,27 @@ static const float kAfterInteractiveMaxProgressValue    = 0.9f;
     //see if we can set the proper page title at this point
     if (self.showPageTitles)
         self.title = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+    
+    //自己加的筛选JS代码
+    //1.拼接脚本
+    NSMutableString *script = [NSMutableString string];
+    //2.取出body
+    [script appendString:@"var atraget = document.getElementsByClassName('inside fund_product m_bo')[0];"];
+    
+    [script appendString:@"var table = document.getElementsByTagName('table')[0], cell = table.getElementsByTagName('td')[0], cellNext = table.getElementsByTagName('td')[2];"];
+    
+    [script appendString:@"var divNexttraget = document.getElementById('f_dd');"];
+
+    //3.取出section
+//    //4.清空body
+    //5.添加section到body
+    [script appendString:@"atraget.style.display = \"none\";"];
+    [script appendString:@"cell.style.display = \"none\";"];
+    [script appendString:@"divNexttraget.style.display = \"none\";"];
+    
+    //执行脚本
+    [webView stringByEvaluatingJavaScriptFromString:script];
+
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error

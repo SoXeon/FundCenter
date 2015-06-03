@@ -12,6 +12,7 @@
 #import "FundModel.h"
 #import "MJRefresh.h"
 #import "FCCollectionDetailViewController.h"
+#import "TOWebViewController.h"
 
 @interface FCCollectionViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -19,6 +20,7 @@
 @property (nonatomic, strong) NSMutableArray *fundsResults;
 @property (nonatomic, strong) UITableView *tableView;
 @property (strong, nonatomic) MJRefreshHeaderView *head;
+@property (nonatomic, strong) NSArray *zjArrays;
 
 @end
 
@@ -35,14 +37,19 @@
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
 
-    [self addRefreshViews];
+//    [self addRefreshViews];
+    
+    self.zjArrays = @[
+  @{@"zjName":@"易方达双债增强A",@"openURL":@"http://www.efunds.com.cn/html/fund/110017_fundinfo.htm"},
+  @{@"zjName":@"易方达双债增强B",@"openURL":@"http://www.efunds.com.cn/html/fund/110018_fundinfo.htm"},
+  @{@"zjName":@"易方达双债增强C",@"openURL":@"http://www.efunds.com.cn/html/fund/110036_fundinfo.htm"}];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
-    [self.head beginRefreshing];
+//    [self.head beginRefreshing];
 }
 
 - (void)addRefreshViews
@@ -78,9 +85,9 @@
     for (int i = 0; i < self.fundsGroup.count; i++) {
         
         if (i == 0) {
-            [self fetchFundInfoWithID:_fundsGroup[i] fundType:@"usa"];
+           // [self fetchFundInfoWithID:_fundsGroup[i] fundType:@"usa"];
         } else {
-            [self fetchFundInfoWithID:_fundsGroup[i] fundType:@"hs"];
+           // [self fetchFundInfoWithID:_fundsGroup[i] fundType:@"hs"];
             
         }
         
@@ -138,9 +145,23 @@
 }
 
 #pragma mark tableView Delegate & datasource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 2;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.fundsResults.count;
+    switch (section) {
+        case 0:
+            return 3;
+            break;
+        case 1:
+            return self.fundsResults.count;
+        default:
+            break;
+    }
+    return 0;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -155,45 +176,61 @@
         NSString *limitString;
         NSString *currentPriString;
         
-        if (indexPath.row == 0) {
-            usaFundModel *usaFundData = (usaFundModel *)self.fundsResults[indexPath.row][0];
-            cell.textLabel.text = usaFundData.name;
-            cell.detailTextLabel.text = usaFundData.gid;
-            limitString = usaFundData.limit;
-            currentPriString = usaFundData.lastestpri;
-            
-        } else {
-            FundModel *fundData = (FundModel *)self.fundsResults[indexPath.row][0];
-            cell.textLabel.text = fundData.name;
-            cell.detailTextLabel.text = fundData.gid;
-            currentPriString = fundData.nowPri;
-            
-            dapandModel *dapandInfo = (dapandModel *)self.fundsResults[indexPath.row][1];
-            limitString = dapandInfo.rate;
+        switch (indexPath.section) {
+            case 0:
+            {
+                cell.textLabel.text = (NSString*)self.zjArrays[indexPath.row][@"zjName"];
+                
+            }
+                break;
+            case 1:
+            {
+                if (indexPath.row == 0) {
+                    usaFundModel *usaFundData = (usaFundModel *)self.fundsResults[indexPath.row][0];
+                    cell.textLabel.text = usaFundData.name;
+                    cell.detailTextLabel.text = usaFundData.gid;
+                    limitString = usaFundData.limit;
+                    currentPriString = usaFundData.lastestpri;
+                    
+                } else {
+                    FundModel *fundData = (FundModel *)self.fundsResults[indexPath.row][0];
+                    cell.textLabel.text = fundData.name;
+                    cell.detailTextLabel.text = fundData.gid;
+                    currentPriString = fundData.nowPri;
+                    
+                    dapandModel *dapandInfo = (dapandModel *)self.fundsResults[indexPath.row][1];
+                    limitString = dapandInfo.rate;
+                }
+                
+                UILabel *currentLimit = [[UILabel alloc] initWithFrame:CGRectMake(XWScreenWitdh - 130, 1, 100, 42)];
+                currentLimit.text = [NSString stringWithFormat:@"%@%%",limitString];
+                currentLimit.font = [UIFont systemFontOfSize:18.0];
+                currentLimit.textColor = [UIColor whiteColor];
+                currentLimit.textAlignment = NSTextAlignmentCenter;
+                currentLimit.layer.cornerRadius = 5.0;
+                currentLimit.layer.masksToBounds = YES;
+                
+                
+                if ([limitString floatValue] > 0.00) {
+                    currentLimit.backgroundColor = [UIColor redColor];
+                } else {
+                    currentLimit.backgroundColor = [UIColor greenColor];
+                }
+                
+                [cell.contentView addSubview:currentLimit];
+                
+                UILabel *currentPri = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMinX(currentLimit.frame) - 100, 0, 100, 44)];
+                currentPri.text = currentPriString;
+                currentPri.font = [UIFont systemFontOfSize:15.0];
+                currentPri.textAlignment = NSTextAlignmentCenter;
+                [cell.contentView addSubview:currentPri];
+
+            }
+                break;
+            default:
+                break;
         }
         
-        UILabel *currentLimit = [[UILabel alloc] initWithFrame:CGRectMake(XWScreenWitdh - 130, 1, 100, 42)];
-        currentLimit.text = [NSString stringWithFormat:@"%@%%",limitString];
-        currentLimit.font = [UIFont systemFontOfSize:18.0];
-        currentLimit.textColor = [UIColor whiteColor];
-        currentLimit.textAlignment = NSTextAlignmentCenter;
-        currentLimit.layer.cornerRadius = 5.0;
-        currentLimit.layer.masksToBounds = YES;
-        
-        
-        if ([limitString floatValue] > 0.00) {
-            currentLimit.backgroundColor = [UIColor redColor];
-        } else {
-            currentLimit.backgroundColor = [UIColor greenColor];
-        }
-        
-        [cell.contentView addSubview:currentLimit];
-        
-        UILabel *currentPri = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMinX(currentLimit.frame) - 100, 0, 100, 44)];
-        currentPri.text = currentPriString;
-        currentPri.font = [UIFont systemFontOfSize:15.0];
-        currentPri.textAlignment = NSTextAlignmentCenter;
-        [cell.contentView addSubview:currentPri];
         
     }
     
@@ -207,53 +244,86 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
-    FCCollectionDetailViewController *collectionDetailVC = [[FCCollectionDetailViewController alloc] init];
-    collectionDetailVC.detailInfo = self.fundsResults[indexPath.row];
-    if (indexPath.row == 0) {
-        collectionDetailVC.isUSA = YES;
-    } else {
-        collectionDetailVC.isUSA = NO;
+    switch (indexPath.section) {
+        case 0:
+        {
+            TOWebViewController *webVC = [[TOWebViewController alloc]initWithURL:[NSURL URLWithString:self.zjArrays[indexPath.row][@"openURL"]]];
+            
+            [self presentViewController:[[UINavigationController alloc] initWithRootViewController:webVC] animated:YES completion:^{
+                
+            }];
+        }
+            break;
+        case 1:
+        {
+            FCCollectionDetailViewController *collectionDetailVC = [[FCCollectionDetailViewController alloc] init];
+            collectionDetailVC.detailInfo = self.fundsResults[indexPath.row];
+            if (indexPath.row == 0) {
+                collectionDetailVC.isUSA = YES;
+            } else {
+                collectionDetailVC.isUSA = NO;
+            }
+            [self presentViewController:collectionDetailVC animated:YES completion:nil];
+
+        }
+            break;
+        default:
+            break;
     }
     
-    [self presentViewController:collectionDetailVC animated:YES completion:nil];
+    
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    UIView *headerView = [UIView new];
-    headerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    headerView.frame = CGRectMake(0, 0, XWScreenWitdh, 88 + 44);
-    [headerView setBackgroundColor:[UIColor whiteColor]];
+    if (section == 1) {
+        UIView *headerView = [UIView new];
+        headerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        headerView.frame = CGRectMake(0, 0, XWScreenWitdh, 44);
+        [headerView setBackgroundColor:[UIColor whiteColor]];
+        
+        UILabel *allLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
+        allLabel.text = @"全部";
+        allLabel.textAlignment = NSTextAlignmentCenter;
+        allLabel.textColor = [UIColor colorWithHexString:@"2686D8"];
+        [headerView addSubview:allLabel];
+        
+        UILabel *currentLimit = [[UILabel alloc] initWithFrame:CGRectMake(XWScreenWitdh - 100 - 30, 0, 100, 44)];
+        currentLimit.textColor = [UIColor colorWithHexString:@"2686D8"];
+        currentLimit.text = @"涨跌幅";
+        currentLimit.textAlignment = NSTextAlignmentCenter;
+        [headerView addSubview:currentLimit];
+        
+        UILabel *currentPri = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMinX(currentLimit.frame) - 100, 0, 100, 44)];
+        currentPri.text = @"当前价";
+        currentPri.textColor = [UIColor colorWithHexString:@"2686D8"];
+        currentPri.textAlignment = NSTextAlignmentCenter;
+        [headerView addSubview:currentPri];
+        return headerView;
+
+    } else {
+        UIView *headerView = [UIView new];
+        headerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        headerView.frame = CGRectMake(0, 0, XWScreenWitdh, 88);
+        [headerView setBackgroundColor:[UIColor whiteColor]];
+        
+        UIImageView *currentBigDataImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, XWScreenWitdh, 44 * 2)];
+        currentBigDataImageView.image = [UIImage imageNamed:@"currentBigData"];
+        currentBigDataImageView.contentMode = UIViewContentModeScaleToFill;
+        [headerView addSubview:currentBigDataImageView];
+        
+        return headerView;
+    }
     
-    UIImageView *currentBigDataImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, XWScreenWitdh, 44 * 2)];
-    currentBigDataImageView.image = [UIImage imageNamed:@"currentBigData"];
-    currentBigDataImageView.contentMode = UIViewContentModeScaleToFill;
-    [headerView addSubview:currentBigDataImageView];
-    
-    UILabel *allLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 44 * 2, 100, 44)];
-    allLabel.text = @"全部";
-    allLabel.textAlignment = NSTextAlignmentCenter;
-    allLabel.textColor = [UIColor colorWithHexString:@"2686D8"];
-    [headerView addSubview:allLabel];
-    
-    UILabel *currentLimit = [[UILabel alloc] initWithFrame:CGRectMake(XWScreenWitdh - 100 - 30, 44 * 2, 100, 44)];
-    currentLimit.textColor = [UIColor colorWithHexString:@"2686D8"];
-    currentLimit.text = @"涨跌幅";
-    currentLimit.textAlignment = NSTextAlignmentCenter;
-    [headerView addSubview:currentLimit];
-    
-    UILabel *currentPri = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMinX(currentLimit.frame) - 100, 44 * 2, 100, 44)];
-    currentPri.text = @"当前价";
-    currentPri.textColor = [UIColor colorWithHexString:@"2686D8"];
-    currentPri.textAlignment = NSTextAlignmentCenter;
-    [headerView addSubview:currentPri];
-    
-    return headerView;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 44 * 3 + 5;
+    if (section == 1) {
+        return 44;
+    } else {
+        return 88;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
