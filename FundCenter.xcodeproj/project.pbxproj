@@ -105,6 +105,7 @@
 		E23443891B04DEC200775771 /* TOActivitySafari.m in Sources */ = {isa = PBXBuildFile; fileRef = E23443801B04DEC200775771 /* TOActivitySafari.m */; };
 		E234438A1B04DEC200775771 /* TOWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23443821B04DEC200775771 /* TOWebViewController.m */; };
 		E234438B1B04DEC200775771 /* UIImage+TOWebViewControllerIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = E23443841B04DEC200775771 /* UIImage+TOWebViewControllerIcons.m */; };
+		E295231F1B1F012D00D2285E /* NSDictionary+Seruity.m in Sources */ = {isa = PBXBuildFile; fileRef = E295231E1B1F012D00D2285E /* NSDictionary+Seruity.m */; };
 		E2A9BACF1B01E06000A26700 /* UUAVAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A9BAC01B01E06000A26700 /* UUAVAudioPlayer.m */; };
 		E2A9BAD01B01E06000A26700 /* UUImageAvatarBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A9BAC21B01E06000A26700 /* UUImageAvatarBrowser.m */; };
 		E2A9BAD11B01E06000A26700 /* UUInputFunctionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A9BAC41B01E06000A26700 /* UUInputFunctionView.m */; };
@@ -400,6 +401,8 @@
 		E23443841B04DEC200775771 /* UIImage+TOWebViewControllerIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TOWebViewControllerIcons.m"; sourceTree = "<group>"; };
 		E23443851B04DEC200775771 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TOWebViewControllerLocalizable.strings"; sourceTree = "<group>"; };
 		E23443861B04DEC200775771 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/TOWebViewControllerLocalizable.strings"; sourceTree = "<group>"; };
+		E295231D1B1F012D00D2285E /* NSDictionary+Seruity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Seruity.h"; sourceTree = "<group>"; };
+		E295231E1B1F012D00D2285E /* NSDictionary+Seruity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Seruity.m"; sourceTree = "<group>"; };
 		E2A9BABF1B01E06000A26700 /* UUAVAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUAVAudioPlayer.h; sourceTree = "<group>"; };
 		E2A9BAC01B01E06000A26700 /* UUAVAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUAVAudioPlayer.m; sourceTree = "<group>"; };
 		E2A9BAC11B01E06000A26700 /* UUImageAvatarBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUImageAvatarBrowser.h; sourceTree = "<group>"; };
@@ -773,6 +776,8 @@
 				E22FAEB11B00CCC600651413 /* UIView+Extension.m */,
 				E22FAE9E1B008FC100651413 /* UIColor+HexColors.h */,
 				E22FAE9F1B008FC100651413 /* UIColor+HexColors.m */,
+				E295231D1B1F012D00D2285E /* NSDictionary+Seruity.h */,
+				E295231E1B1F012D00D2285E /* NSDictionary+Seruity.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -1589,6 +1594,7 @@
 				E22FAE011B005DA300651413 /* MKAnnotationView+WebCache.m in Sources */,
 				E22FAD8F1B005A8300651413 /* NSArray+MASAdditions.m in Sources */,
 				E22FAE201B005E5E00651413 /* CRToastViewController.m in Sources */,
+				E295231F1B1F012D00D2285E /* NSDictionary+Seruity.m in Sources */,
 				E22FAE951B00792800651413 /* FCAccount.m in Sources */,
 				E20BE69E1B033A3000664B89 /* SHTableViewController.m in Sources */,
 				E23443711B04B84B00775771 /* UICountingLabel.m in Sources */,

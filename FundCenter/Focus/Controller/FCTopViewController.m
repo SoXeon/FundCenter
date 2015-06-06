@@ -60,7 +60,7 @@
     data01.color = PNFreshGreen;
     data01.itemCount = lineChart.xLabels.count;
     data01.inflexionPointStyle = PNLineChartPointStyleNone;
-    data01.dataTitle = @"沪深";
+    data01.dataTitle = @"沪深300";
     data01.getData = ^(NSUInteger index) {
         CGFloat yValue = [data01Array[index] floatValue];
         return [PNLineChartDataItem dataItemWithY:yValue];
@@ -69,7 +69,7 @@
     NSArray * data02Array = @[@20.1, @180.1, @26.4, @202.2, @126.2, @68.1, @130.1, @123.4, @212.2, @182.2,@103,@102];
     PNLineChartData *data02 = [PNLineChartData new];
     data02.color = PNTwitterColor;
-    data02.dataTitle = @"港股";
+    data02.dataTitle = @"中证700";
     data02.inflexionPointStyle = PNLineChartPointStyleNone;
     data02.itemCount = lineChart.xLabels.count;
     data02.getData = ^(NSUInteger index) {
@@ -82,7 +82,7 @@
     PNLineChartData *data03 = [PNLineChartData new];
     data03.color = PNStarYellow;
     data03.itemCount = lineChart.xLabels.count;
-    data03.dataTitle = @"美股";
+    data03.dataTitle = @"业绩比较基准";
     data03.inflexionPointStyle = PNLineChartPointStyleNone;
     data03.getData = ^(NSUInteger index) {
         CGFloat yValue = [data03Array[index] floatValue];
@@ -133,7 +133,7 @@
     //For Scatter Chart
     
     UILabel * lastLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(pieChart.frame) + 20, SCREEN_WIDTH, 30)];
-    lastLabel.text = @"股票涨跌幅";
+    lastLabel.text = @"债券涨跌幅";
     lastLabel.textColor = PNDarkBlue;
     lastLabel.font = [UIFont fontWithName:@"Avenir-Medium" size:23.0];
     lastLabel.textAlignment = NSTextAlignmentCenter;

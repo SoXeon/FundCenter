@@ -13,14 +13,14 @@
 - (id)initWithDict:(NSDictionary *)dict
 {
     if (self = [super init]) {
-        self.gid = dict[@"gid"];
-        self.name = dict[@"name"];
-        self.todayStartPri = dict[@"todayStartPri"];
-        self.yestodEndPri = dict[@"yestodEndPri"];
-        self.nowPri = dict[@"nowPri"];
-        self.todayMax = dict[@"todayMax"];
-        self.todayMin = dict[@"todayMin"];
-        self.date = dict[@"date"];
+        self.gid = [dict safeValueForKey:@"gid"];
+        self.name = [dict safeValueForKey:@"name"];
+        self.todayStartPri = [dict safeValueForKey:@"todayStartPri"];
+        self.yestodEndPri = [dict safeValueForKey:@"yestodEndPri"];
+        self.nowPri = [dict safeValueForKey:@"nowPri"];
+        self.todayMax = [dict safeValueForKey:@"todayMax"];
+        self.todayMin = [dict safeValueForKey:@"todayMin"];
+        self.date = [dict safeValueForKey:@"date"];
     }
     return self;
 }
@@ -32,20 +32,20 @@
 - (id)initWithDict:(NSDictionary *)dict
 {
     if (self = [super init]) {
-        self.gid = dict[@"gid"];
-        self.name = dict[@"name"];
-        self.lastestpri = dict[@"lastestpri"];
-        self.maxpri = dict[@"maxpri"];
-        self.minpri = dict[@"minpri"];
-        self.uppic = dict[@"uppic"];
-        self.limit = dict[@"limit"];
-        self.markValue = dict[@"markValue"];
-        self.openpri = dict[@"openpri"];
-        self.EPS = dict[@"EPS"];
-        self.priearn = dict[@"priearn"];
-        self.traAmount = dict[@"traAmount"];
-        self.ustime = dict[@"dict"];
-        self.formpri = dict[@"formpri"];
+        self.gid = [dict safeValueForKey:@"gid"];
+        self.name = [dict safeValueForKey:@"name"];
+        self.lastestpri = [dict safeValueForKey:@"lastestpri"];
+        self.maxpri = [dict safeValueForKey:@"maxpri"];
+        self.minpri = [dict safeValueForKey:@"minpri"];
+        self.uppic = [dict safeValueForKey:@"uppic"];
+        self.limit = [dict safeValueForKey:@"limit"];
+        self.markValue = [dict safeValueForKey:@"markValue"];
+        self.openpri = [dict safeValueForKey:@"openpri"];
+        self.EPS = [dict safeValueForKey:@"EPS"];
+        self.priearn = [dict safeValueForKey:@"priearn"];
+        self.traAmount = [dict safeValueForKey:@"traAmount"];
+        self.ustime = [dict safeValueForKey:@"dict"];
+        self.formpri = [dict safeValueForKey:@"formpri"];
     }
     return self;
 }
@@ -57,12 +57,12 @@
 - (id)initWithDict:(NSDictionary *)dict
 {
     if (self = [super init]) {
-        self.name = dict[@"name"];
-        self.dot = dict[@"dot"];
-        self.nowPic = dict[@"nowPic"];
-        self.traNumber = dict[@"traNumber"];
-        self.traAmount = dict[@"traAmount"];
-        self.rate = dict[@"rate"];
+        self.name = [dict safeValueForKey:@"name"];
+        self.dot = [dict safeValueForKey:@"dot"];
+        self.nowPic = [dict safeValueForKey:@"nowPic"];
+        self.traNumber = [dict safeValueForKey:@"traNumber"];
+        self.traAmount = [dict safeValueForKey:@"traAmount"];
+        self.rate = [dict safeValueForKey:@"rate"];
     }
     return self;
 }
@@ -74,10 +74,10 @@
 - (id)initWithDict:(NSDictionary *)dict
 {
     if (self = [super init]) {
-        self.minurl = dict[@"minurl"];
-        self.dayurl = dict[@"dayurl"];
-        self.weekurl = dict[@"weekurl"];
-        self.monthurl = dict[@"monthurl"];
+        self.minurl = [dict safeValueForKey:@"minurl"];
+        self.dayurl = [dict safeValueForKey:@"dayurl"];
+        self.weekurl = [dict safeValueForKey:@"weekurl"];
+        self.monthurl = [dict safeValueForKey:@"monthurl"];
     }
     return self;
 }
@@ -89,11 +89,11 @@
 - (id)initWithDict:(NSDictionary *)dict
 {
     if (self = [super init]) {
-        self.minurl = dict[@"minurl"];
-        self.dayurl = dict[@"dayurl"];
-        self.weekurl = dict[@"weekurl"];
-        self.monthurl = dict[@"monthurl"];
-        self.min_weekpic = dict[@"min_weekpic"];
+        self.minurl = [dict safeValueForKey:@"minurl"];
+        self.dayurl = [dict safeValueForKey:@"dayurl"];
+        self.weekurl = [dict safeValueForKey:@"weekurl"];
+        self.monthurl = [dict safeValueForKey:@"monthurl"];
+        self.min_weekpic = [dict safeValueForKey:@"min_weekpic"];
     }
     return self;
 }
